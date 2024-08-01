@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */; };
-		EAFDF7052C5BD13E00D9782F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7042C5BD13E00D9782F /* ContentView.swift */; };
 		EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7062C5BD13E00D9782F /* Item.swift */; };
 		EAFDF7092C5BD13F00D9782F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFDF7082C5BD13F00D9782F /* Assets.xcassets */; };
 		EAFDF70C2C5BD13F00D9782F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFDF70B2C5BD13F00D9782F /* Preview Assets.xcassets */; };
@@ -24,6 +23,15 @@
 		EAFDF7402C5BD46900D9782F /* MorpionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7372C5BD46900D9782F /* MorpionItem.swift */; };
 		EAFDF7412C5BD46900D9782F /* AvisSuggestionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7382C5BD46900D9782F /* AvisSuggestionItem.swift */; };
 		EAFDF7422C5BD46900D9782F /* HistoriqueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7392C5BD46900D9782F /* HistoriqueItem.swift */; };
+		EAFDF74A2C5BD56600D9782F /* HistoriqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */; };
+		EAFDF74B2C5BD56600D9782F /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7442C5BD56500D9782F /* SplashScreenView.swift */; };
+		EAFDF74C2C5BD56600D9782F /* NotesEtAvisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */; };
+		EAFDF74D2C5BD56600D9782F /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7462C5BD56500D9782F /* ConfigurationView.swift */; };
+		EAFDF74E2C5BD56600D9782F /* RouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7472C5BD56500D9782F /* RouletteView.swift */; };
+		EAFDF74F2C5BD56600D9782F /* TabBarControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */; };
+		EAFDF7502C5BD56600D9782F /* ListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7492C5BD56600D9782F /* ListeView.swift */; };
+		EAFDF7532C5BD60700D9782F /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7512C5BD60700D9782F /* MaintTabBarController.swift */; };
+		EAFDF7542C5BD60700D9782F /* HistoriqueViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +54,6 @@
 /* Begin PBXFileReference section */
 		EAFDF6FF2C5BD13E00D9782F /* MoglApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoglApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoglAppApp.swift; sourceTree = "<group>"; };
-		EAFDF7042C5BD13E00D9782F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAFDF7062C5BD13E00D9782F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		EAFDF7082C5BD13F00D9782F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAFDF70B2C5BD13F00D9782F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -64,6 +71,15 @@
 		EAFDF7372C5BD46900D9782F /* MorpionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorpionItem.swift; sourceTree = "<group>"; };
 		EAFDF7382C5BD46900D9782F /* AvisSuggestionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvisSuggestionItem.swift; sourceTree = "<group>"; };
 		EAFDF7392C5BD46900D9782F /* HistoriqueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoriqueItem.swift; sourceTree = "<group>"; };
+		EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoriqueView.swift; sourceTree = "<group>"; };
+		EAFDF7442C5BD56500D9782F /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisView.swift; sourceTree = "<group>"; };
+		EAFDF7462C5BD56500D9782F /* ConfigurationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		EAFDF7472C5BD56500D9782F /* RouletteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteView.swift; sourceTree = "<group>"; };
+		EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerView.swift; sourceTree = "<group>"; };
+		EAFDF7492C5BD56600D9782F /* ListeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListeView.swift; sourceTree = "<group>"; };
+		EAFDF7512C5BD60700D9782F /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
+		EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoriqueViewModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +130,11 @@
 		EAFDF7012C5BD13E00D9782F /* MoglApp */ = {
 			isa = PBXGroup;
 			children = (
-				EAFDF72E2C5BD28900D9782F /* Models */,
-				EAFDF7302C5BD3DF00D9782F /* ViewModels */,
-				EAFDF72F2C5BD29100D9782F /* Views */,
 				EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */,
-				EAFDF7042C5BD13E00D9782F /* ContentView.swift */,
 				EAFDF7062C5BD13E00D9782F /* Item.swift */,
+				EAFDF72E2C5BD28900D9782F /* Models */,
+				EAFDF72F2C5BD29100D9782F /* Views */,
+				EAFDF7302C5BD3DF00D9782F /* ViewModels */,
 				EAFDF7082C5BD13F00D9782F /* Assets.xcassets */,
 				EAFDF70A2C5BD13F00D9782F /* Preview Content */,
 			);
@@ -170,6 +185,13 @@
 		EAFDF72F2C5BD29100D9782F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EAFDF7462C5BD56500D9782F /* ConfigurationView.swift */,
+				EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */,
+				EAFDF7492C5BD56600D9782F /* ListeView.swift */,
+				EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */,
+				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
+				EAFDF7442C5BD56500D9782F /* SplashScreenView.swift */,
+				EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +199,8 @@
 		EAFDF7302C5BD3DF00D9782F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */,
+				EAFDF7512C5BD60700D9782F /* MaintTabBarController.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -312,12 +336,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAFDF73C2C5BD46900D9782F /* CategorieItem.swift in Sources */,
-				EAFDF7052C5BD13E00D9782F /* ContentView.swift in Sources */,
 				EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */,
+				EAFDF74C2C5BD56600D9782F /* NotesEtAvisView.swift in Sources */,
 				EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */,
+				EAFDF74E2C5BD56600D9782F /* RouletteView.swift in Sources */,
+				EAFDF74D2C5BD56600D9782F /* ConfigurationView.swift in Sources */,
+				EAFDF7532C5BD60700D9782F /* MaintTabBarController.swift in Sources */,
 				EAFDF73D2C5BD46900D9782F /* JoueurItem.swift in Sources */,
 				EAFDF7412C5BD46900D9782F /* AvisSuggestionItem.swift in Sources */,
 				EAFDF73E2C5BD46900D9782F /* ActiviteItem.swift in Sources */,
+				EAFDF74B2C5BD56600D9782F /* SplashScreenView.swift in Sources */,
+				EAFDF74A2C5BD56600D9782F /* HistoriqueView.swift in Sources */,
+				EAFDF7502C5BD56600D9782F /* ListeView.swift in Sources */,
+				EAFDF7542C5BD60700D9782F /* HistoriqueViewModels.swift in Sources */,
+				EAFDF74F2C5BD56600D9782F /* TabBarControllerView.swift in Sources */,
 				EAFDF7422C5BD46900D9782F /* HistoriqueItem.swift in Sources */,
 				EAFDF73B2C5BD46900D9782F /* AccesibiliteItem.swift in Sources */,
 				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
