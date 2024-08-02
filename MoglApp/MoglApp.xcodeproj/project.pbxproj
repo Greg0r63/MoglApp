@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */; };
 		EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */; };
 		EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7062C5BD13E00D9782F /* Item.swift */; };
 		EAFDF7092C5BD13F00D9782F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFDF7082C5BD13F00D9782F /* Assets.xcassets */; };
@@ -30,7 +31,6 @@
 		EAFDF74E2C5BD56600D9782F /* RouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7472C5BD56500D9782F /* RouletteView.swift */; };
 		EAFDF74F2C5BD56600D9782F /* TabBarControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */; };
 		EAFDF7502C5BD56600D9782F /* ListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7492C5BD56600D9782F /* ListeView.swift */; };
-		EAFDF7532C5BD60700D9782F /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7512C5BD60700D9782F /* MaintTabBarController.swift */; };
 		EAFDF7542C5BD60700D9782F /* HistoriqueViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EAFDF6FF2C5BD13E00D9782F /* MoglApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoglApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoglAppApp.swift; sourceTree = "<group>"; };
 		EAFDF7062C5BD13E00D9782F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		EAFDF7472C5BD56500D9782F /* RouletteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteView.swift; sourceTree = "<group>"; };
 		EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerView.swift; sourceTree = "<group>"; };
 		EAFDF7492C5BD56600D9782F /* ListeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListeView.swift; sourceTree = "<group>"; };
-		EAFDF7512C5BD60700D9782F /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoriqueViewModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +192,7 @@
 				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
 				EAFDF7442C5BD56500D9782F /* SplashScreenView.swift */,
 				EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */,
+				EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */,
-				EAFDF7512C5BD60700D9782F /* MaintTabBarController.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -341,7 +341,6 @@
 				EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */,
 				EAFDF74E2C5BD56600D9782F /* RouletteView.swift in Sources */,
 				EAFDF74D2C5BD56600D9782F /* ConfigurationView.swift in Sources */,
-				EAFDF7532C5BD60700D9782F /* MaintTabBarController.swift in Sources */,
 				EAFDF73D2C5BD46900D9782F /* JoueurItem.swift in Sources */,
 				EAFDF7412C5BD46900D9782F /* AvisSuggestionItem.swift in Sources */,
 				EAFDF73E2C5BD46900D9782F /* ActiviteItem.swift in Sources */,
@@ -355,6 +354,7 @@
 				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,
 				EAFDF7402C5BD46900D9782F /* MorpionItem.swift in Sources */,
+				EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
