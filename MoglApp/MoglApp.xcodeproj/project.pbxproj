@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EAC628F72C5C302500F78424 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC628F62C5C302500F78424 /* RouletteViewModel.swift */; };
 		EAC628FF2C5CE7D500F78424 /* BoutonRouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC628FE2C5CE7D500F78424 /* BoutonRouletteView.swift */; };
+		8ECBAB572C5CD78700438248 /* NotesEtAvisStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECBAB542C5CD78700438248 /* NotesEtAvisStoryboard.storyboard */; };
+		8ECBAB592C5CD78700438248 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBAB562C5CD78700438248 /* NotesEtAvisViewController.swift */; };
 		EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */; };
 		EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */; };
 		EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7062C5BD13E00D9782F /* Item.swift */; };
@@ -56,6 +58,8 @@
 /* Begin PBXFileReference section */
 		EAC628F62C5C302500F78424 /* RouletteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
 		EAC628FE2C5CE7D500F78424 /* BoutonRouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonRouletteView.swift; sourceTree = "<group>"; };
+		8ECBAB542C5CD78700438248 /* NotesEtAvisStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesEtAvisStoryboard.storyboard; sourceTree = "<group>"; };
+		8ECBAB562C5CD78700438248 /* NotesEtAvisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisViewController.swift; sourceTree = "<group>"; };
 		EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EAFDF6FF2C5BD13E00D9782F /* MoglApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoglApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoglAppApp.swift; sourceTree = "<group>"; };
@@ -198,14 +202,16 @@
 			isa = PBXGroup;
 			children = (
 				EAC628FB2C5CDAEB00F78424 /* SubViews */,
+				EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */,
 				EAFDF7462C5BD56500D9782F /* ConfigurationView.swift */,
 				EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */,
 				EAFDF7492C5BD56600D9782F /* ListeView.swift */,
-				EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */,
 				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
 				EAFDF7442C5BD56500D9782F /* SplashScreenView.swift */,
 				EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */,
-				EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */,
+				EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */,
+				8ECBAB562C5CD78700438248 /* NotesEtAvisViewController.swift */,
+				8ECBAB542C5CD78700438248 /* NotesEtAvisStoryboard.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 			files = (
 				EAFDF70C2C5BD13F00D9782F /* Preview Assets.xcassets in Resources */,
 				EAFDF7092C5BD13F00D9782F /* Assets.xcassets in Resources */,
+				8ECBAB572C5CD78700438248 /* NotesEtAvisStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +375,7 @@
 				EAFDF7422C5BD46900D9782F /* HistoriqueItem.swift in Sources */,
 				EAFDF73B2C5BD46900D9782F /* AccesibiliteItem.swift in Sources */,
 				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
+				8ECBAB592C5CD78700438248 /* NotesEtAvisViewController.swift in Sources */,
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,
 				EAC628FF2C5CE7D500F78424 /* BoutonRouletteView.swift in Sources */,
 				EAFDF7402C5BD46900D9782F /* MorpionItem.swift in Sources */,
