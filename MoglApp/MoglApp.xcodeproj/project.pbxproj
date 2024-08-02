@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAC628F72C5C302500F78424 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC628F62C5C302500F78424 /* RouletteViewModel.swift */; };
+		EAC628FF2C5CE7D500F78424 /* BoutonRouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC628FE2C5CE7D500F78424 /* BoutonRouletteView.swift */; };
 		EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */; };
 		EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7062C5BD13E00D9782F /* Item.swift */; };
 		EAFDF7092C5BD13F00D9782F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFDF7082C5BD13F00D9782F /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EAC628F62C5C302500F78424 /* RouletteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
+		EAC628FE2C5CE7D500F78424 /* BoutonRouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonRouletteView.swift; sourceTree = "<group>"; };
 		EAFDF6FF2C5BD13E00D9782F /* MoglApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoglApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoglAppApp.swift; sourceTree = "<group>"; };
 		EAFDF7062C5BD13E00D9782F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -107,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EAC628FB2C5CDAEB00F78424 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				EAC628FE2C5CE7D500F78424 /* BoutonRouletteView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		EAFDF6F62C5BD13E00D9782F = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +197,7 @@
 		EAFDF72F2C5BD29100D9782F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EAC628FB2C5CDAEB00F78424 /* SubViews */,
 				EAFDF7462C5BD56500D9782F /* ConfigurationView.swift */,
 				EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */,
 				EAFDF7492C5BD56600D9782F /* ListeView.swift */,
@@ -201,6 +214,7 @@
 			children = (
 				EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */,
 				EAFDF7512C5BD60700D9782F /* MaintTabBarController.swift */,
+				EAC628F62C5C302500F78424 /* RouletteViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -335,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAC628F72C5C302500F78424 /* RouletteViewModel.swift in Sources */,
 				EAFDF73C2C5BD46900D9782F /* CategorieItem.swift in Sources */,
 				EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */,
 				EAFDF74C2C5BD56600D9782F /* NotesEtAvisView.swift in Sources */,
@@ -354,6 +369,7 @@
 				EAFDF73B2C5BD46900D9782F /* AccesibiliteItem.swift in Sources */,
 				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,
+				EAC628FF2C5CE7D500F78424 /* BoutonRouletteView.swift in Sources */,
 				EAFDF7402C5BD46900D9782F /* MorpionItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
