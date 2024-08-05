@@ -10,11 +10,11 @@ import Foundation
 class Drapeaux: Identifiable {
     var id: UUID = UUID()
     var name: String
-    var image: String
+    var nomDeDrapeau: String
     
-    init(id: UUID = UUID(), name: String, image: String) {
+    init(id: UUID = UUID(), name: String, nomDeDrapeau: String) {
         self.id = id
         self.name = name
-        self.image = image
+        self.nomDeDrapeau = nomDeDrapeau
     }
 }
