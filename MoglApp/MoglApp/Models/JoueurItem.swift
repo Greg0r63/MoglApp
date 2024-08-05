@@ -9,12 +9,12 @@ import Foundation
 import SwiftUI
 
 class Joueur {
-    var id : Int
+    var id : UUID = UUID()
     var nom: [String]
     var couleur: Color
     var aJoue: Bool
     
-    init(id: Int, nom: [String], couleur: Color, aJoue: Bool) {
+    init(id: UUID = UUID(), nom: [String], couleur: Color, aJoue: Bool) {
         self.id = id
         self.nom = nom
         self.couleur = couleur

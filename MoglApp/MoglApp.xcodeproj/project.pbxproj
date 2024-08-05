@@ -208,10 +208,15 @@
 				EAFDF7492C5BD56600D9782F /* ListeView.swift */,
 				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
 				EAFDF7442C5BD56500D9782F /* SplashScreenView.swift */,
-				EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */,
+				EAFDF7462C5BD56500D9782F /* ConfigurationView.swift */,
+				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
+				EAFDF7492C5BD56600D9782F /* ListeView.swift */,
 				EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */,
 				8ECBAB562C5CD78700438248 /* NotesEtAvisViewController.swift */,
 				8ECBAB542C5CD78700438248 /* NotesEtAvisStoryboard.storyboard */,
+				EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */,
+				EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */,
+				EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
