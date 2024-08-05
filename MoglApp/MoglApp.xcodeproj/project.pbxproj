@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */; };
 		EA65D4962C60C00C00BA76C0 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4952C60C00C00BA76C0 /* RouletteViewModel.swift */; };
+		EA65D4982C60C33F00BA76C0 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4972C60C33F00BA76C0 /* CustomColors.swift */; };
 		EAAF0DD92C5D22EC00302F03 /* BoutonRouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF0DD72C5D22EC00302F03 /* BoutonRouletteView.swift */; };
 		EAAF0DDB2C5D272500302F03 /* CustomSegmentedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF0DDA2C5D272500302F03 /* CustomSegmentedButton.swift */; };
 		EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EA65D4952C60C00C00BA76C0 /* RouletteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
+		EA65D4972C60C33F00BA76C0 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		EAAF0DD72C5D22EC00302F03 /* BoutonRouletteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoutonRouletteView.swift; sourceTree = "<group>"; };
 		EAAF0DDA2C5D272500302F03 /* CustomSegmentedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedButton.swift; sourceTree = "<group>"; };
 		EAFDF6FF2C5BD13E00D9782F /* MoglApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoglApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +195,7 @@
 				EAFDF7392C5BD46900D9782F /* HistoriqueItem.swift */,
 				EAFDF7342C5BD46900D9782F /* JoueurItem.swift */,
 				EAFDF7372C5BD46900D9782F /* MorpionItem.swift */,
+				EA65D4972C60C33F00BA76C0 /* CustomColors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				EAFDF73D2C5BD46900D9782F /* JoueurItem.swift in Sources */,
 				EAFDF7412C5BD46900D9782F /* AvisSuggestionItem.swift in Sources */,
 				EAFDF73E2C5BD46900D9782F /* ActiviteItem.swift in Sources */,
+				EA65D4982C60C33F00BA76C0 /* CustomColors.swift in Sources */,
 				EAFDF74B2C5BD56600D9782F /* SplashScreenView.swift in Sources */,
 				EAFDF74A2C5BD56600D9782F /* HistoriqueView.swift in Sources */,
 				EAFDF7502C5BD56600D9782F /* ListeView.swift in Sources */,

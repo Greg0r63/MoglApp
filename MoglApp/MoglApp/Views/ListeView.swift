@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct SelectionView: View {
-    var fondDecran = LinearGradient(colors: [Color("GradientColor1"), Color("GradientColor2")], startPoint: .top, endPoint: .bottom)
     @State var selectedoption: Int = 0
     var body: some View {
         ZStack {
-            fondDecran
+            CustomColors.gradient
                 .ignoresSafeArea()
             HStack(spacing: 0) {
                 CustomSegmentedButton(action: {selectedoption = 0}, title: "Roulette", width: 120, height: 24, isSelected: selectedoption == 0, selectedTextColor: .white, unselectedTextColor: Color("ColorTabBarItem"), taillePolice: 20, topLeftRadius: 5, topRightRadius: 0, bottomLeftRadius: 5, bottomRightRadius: 0, selectedColor: Color("ColorTabBarItem"), unselectedColor: Color("ColorTabBarItem"))
