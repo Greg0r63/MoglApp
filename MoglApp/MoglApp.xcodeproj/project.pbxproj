@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */; };
+		EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */; };
 		EAC628F72C5C302500F78424 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC628F62C5C302500F78424 /* RouletteViewModel.swift */; };
 		EAC628FF2C5CE7D500F78424 /* BoutonRouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC628FE2C5CE7D500F78424 /* BoutonRouletteView.swift */; };
-		EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */; };
 		EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */; };
 		EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7062C5BD13E00D9782F /* Item.swift */; };
 		EAFDF7092C5BD13F00D9782F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFDF7082C5BD13F00D9782F /* Assets.xcassets */; };
@@ -54,9 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrapeauxViewModel.swift; sourceTree = "<group>"; };
+		EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EAC628F62C5C302500F78424 /* RouletteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
 		EAC628FE2C5CE7D500F78424 /* BoutonRouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonRouletteView.swift; sourceTree = "<group>"; };
-		EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EAFDF6FF2C5BD13E00D9782F /* MoglApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoglApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoglAppApp.swift; sourceTree = "<group>"; };
 		EAFDF7062C5BD13E00D9782F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -214,8 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */,
-				EAFDF7512C5BD60700D9782F /* MaintTabBarController.swift */,
 				EAC628F62C5C302500F78424 /* RouletteViewModel.swift */,
+				7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -367,6 +369,7 @@
 				EAFDF74F2C5BD56600D9782F /* TabBarControllerView.swift in Sources */,
 				EAFDF7422C5BD46900D9782F /* HistoriqueItem.swift in Sources */,
 				EAFDF73B2C5BD46900D9782F /* AccesibiliteItem.swift in Sources */,
+				7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */,
 				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,
 				EAC628FF2C5CE7D500F78424 /* BoutonRouletteView.swift in Sources */,
