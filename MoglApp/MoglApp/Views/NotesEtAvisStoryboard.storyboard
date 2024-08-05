@@ -92,6 +92,9 @@
                                     <color key="baseForegroundColor" red="0.32941176470588235" green="0.13725490196078433" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.32941176470588235" green="0.13725490196078433" blue="0.73725490196078436" alpha="0.24498137417218543" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="touchDownEnvoyerButton:" destination="Y6W-OH-hqX" eventType="touchDown" id="Mff-L6-GA8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

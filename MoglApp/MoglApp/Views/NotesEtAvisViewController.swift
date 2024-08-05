@@ -20,6 +20,8 @@ class NotesEtAvisViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var avisTextView: UITextView!
     @IBOutlet weak var envoyerButton: UIButton!
     
+    var numberOfStar = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,11 +35,11 @@ class NotesEtAvisViewController: UIViewController, UITextViewDelegate {
             imageView?.addGestureRecognizer(starTapGesture)
         }
         updateStarRating(selectedStar: 0)
-        
-        setupButtonAppearance()
-        
-        
-        
+    }
+    
+    @IBAction func touchDownEnvoyerButton(_ sender: Any) {
+        envoyerButton.backgroundColor = UIColor.gray
+        var suggestion = AvisSuggestion(note: numberOfStar, suggestion: avisTextView.text)
     }
     
     @objc func starTapped(_ sender: UITapGestureRecognizer) {
@@ -45,8 +47,10 @@ class NotesEtAvisViewController: UIViewController, UITextViewDelegate {
             updateStarRating(selectedStar: tappedStar)
         }
     }
+    
     func updateStarRating(selectedStar: Int) {
         let starImageViews = [oneStarImageView, twoStarImageView, threeStarImageView, fourStarImageView, fiveStarImageView]
+        numberOfStar = selectedStar
         for (index, imageView) in starImageViews.enumerated() {
             if index < selectedStar {
                 imageView?.image = UIImage(systemName: "star.fill")
@@ -55,21 +59,5 @@ class NotesEtAvisViewController: UIViewController, UITextViewDelegate {
             }
         }
     }
-    
-    func setupButtonAppearance() {
-            envoyerButton.addTarget(self, action: #selector(buttonTouchDown), for: .touchDown)
-            envoyerButton.addTarget(self, action: #selector(buttonTouchUp), for: .touchUpInside)
-            envoyerButton.addTarget(self, action: #selector(buttonTouchUp), for: .touchUpOutside)
-        }
-        @objc func buttonTouchDown() {
-            envoyerButton.backgroundColor = UIColor.purple
-            envoyerButton.setTitleColor(UIColor.white, for: .normal)
-        }
-        @objc func buttonTouchUp() {
-            envoyerButton.backgroundColor = UIColor.clear
-            envoyerButton.setTitleColor(UIColor.black, for: .normal)
-        }
-    
-    
-    
+
 }
