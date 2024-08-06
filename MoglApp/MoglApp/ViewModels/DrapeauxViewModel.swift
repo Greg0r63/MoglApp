@@ -12,12 +12,13 @@ class DrapeauxViewModel: ObservableObject {
     @Published var correctAnswer: Int
     @Published var showingScore: Bool = false
     @Published var answerChoosed: String = ""
+    @Published var score = 0
     
     init() {
         drapeaux = [
-            Drapeaux(name: "Jamaica", nomDeDrapeau: "Jamaica"),
-            Drapeaux(name: "Palestine", nomDeDrapeau: "Palestine"),
-            Drapeaux(name: "Nigeria", nomDeDrapeau: "Nigeria"),
+            Drapeaux(name: "Jamaica", nomDeDrapeau: "jamaica"),
+            Drapeaux(name: "Palestine", nomDeDrapeau: "palestine"),
+            Drapeaux(name: "Nigeria", nomDeDrapeau: "nigeria"),
         ].shuffled()
         
         correctAnswer = Int.random(in: 0...2)

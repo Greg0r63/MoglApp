@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */; };
+		7538E08F2C611E6B00EB3162 /* GuessTheFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E08E2C611E6B00EB3162 /* GuessTheFlagView.swift */; };
+		7538E0942C611F7400EB3162 /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E0932C611F7400EB3162 /* LinearGradientView.swift */; };
 		EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */; };
 		EAC628F72C5C302500F78424 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC628F62C5C302500F78424 /* RouletteViewModel.swift */; };
 		EAC628FF2C5CE7D500F78424 /* BoutonRouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC628FE2C5CE7D500F78424 /* BoutonRouletteView.swift */; };
@@ -56,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrapeauxViewModel.swift; sourceTree = "<group>"; };
+		7538E08E2C611E6B00EB3162 /* GuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagView.swift; sourceTree = "<group>"; };
+		7538E0932C611F7400EB3162 /* LinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
 		EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EAC628F62C5C302500F78424 /* RouletteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
 		EAC628FE2C5CE7D500F78424 /* BoutonRouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonRouletteView.swift; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7538E0902C611E7900EB3162 /* GuessTheFlagView */ = {
+			isa = PBXGroup;
+			children = (
+				7538E08E2C611E6B00EB3162 /* GuessTheFlagView.swift */,
+				7538E0932C611F7400EB3162 /* LinearGradientView.swift */,
+			);
+			path = GuessTheFlagView;
+			sourceTree = "<group>";
+		};
 		EAC628FB2C5CDAEB00F78424 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +218,7 @@
 				EAFDF7492C5BD56600D9782F /* ListeView.swift */,
 				EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */,
 				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
+				7538E0902C611E7900EB3162 /* GuessTheFlagView */,
 				EAFDF7442C5BD56500D9782F /* SplashScreenView.swift */,
 				EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */,
 				EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */,
@@ -372,8 +386,10 @@
 				7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */,
 				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,
+				7538E0942C611F7400EB3162 /* LinearGradientView.swift in Sources */,
 				EAC628FF2C5CE7D500F78424 /* BoutonRouletteView.swift in Sources */,
 				EAFDF7402C5BD46900D9782F /* MorpionItem.swift in Sources */,
+				7538E08F2C611E6B00EB3162 /* GuessTheFlagView.swift in Sources */,
 				EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

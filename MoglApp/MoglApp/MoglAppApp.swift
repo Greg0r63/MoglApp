@@ -25,7 +25,9 @@ struct MoglAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            TabBarControllerView()
+         //  TabBarControllerView()
+            GuessTheFlagView()
+            
         }
         .modelContainer(sharedModelContainer)
     }
