@@ -49,9 +49,9 @@ struct GuessTheFlagView: View {
             }
         }
         .alert(viewModel.answerChoosed, isPresented: $viewModel.showingScore) {
-            Button("Continue", role: .none, action: viewModel.nextFlagChoosed)
+            Button("Continuer", role: .none, action: viewModel.nextFlagChoosed)
         } message: {
-            Text("Your score is \(viewModel.score)")
+            Text("Ton score est de \(viewModel.score)")
         }
     }
 }
