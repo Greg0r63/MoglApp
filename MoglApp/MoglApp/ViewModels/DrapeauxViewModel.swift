@@ -13,6 +13,10 @@ class DrapeauxViewModel: ObservableObject {
     @Published var showingScore: Bool = false
     @Published var answerChoosed: String = ""
     @Published var score = 0
+    @Published var numberOfRounds = 0
+    @Published var showingFinalScore = false
+   // @Published var wrongAnswer = ""
+    
     
     init() {
         drapeaux = [
@@ -26,17 +30,22 @@ class DrapeauxViewModel: ObservableObject {
     
     func flagChoosed(_ number: Int) {
         if number == correctAnswer {
-            answerChoosed = "Bonne réponse"
+            answerChoosed = "Bonne réponse 🥳"
+            score += 1
         } else {
-            answerChoosed = "Mauvaise réponse"
+            answerChoosed = "Mauvaise réponse 🫨"
         }
         showingScore = true
     }
     
     func nextFlagChoosed() {
-        drapeaux.shuffle()
+        if numberOfRounds <= 3 {
+            drapeaux.shuffle()
+            numberOfRounds += 1
+        } else {
+            print("stop")
+        }
     }
-    
 }
 
 
