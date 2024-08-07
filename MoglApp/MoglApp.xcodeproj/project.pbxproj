@@ -10,10 +10,7 @@
 		8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */; };
 		8E8572E62C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */; };
 		8E8572E82C63B50F00756AC9 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */; };
-		8EACA4002C60F47100BA7E28 /* CustomSegmentedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACA3FE2C60F47100BA7E28 /* CustomSegmentedButton.swift */; };
 		8EACA4022C60F59200BA7E28 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACA4012C60F59200BA7E28 /* CustomColors.swift */; };
-		8ECBAB572C5CD78700438248 /* NotesEtAvisStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECBAB542C5CD78700438248 /* NotesEtAvisStoryboard.storyboard */; };
-		8ECBAB592C5CD78700438248 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBAB562C5CD78700438248 /* NotesEtAvisViewController.swift */; };
 		EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */; };
 		EA65D4982C60C33F00BA76C0 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4972C60C33F00BA76C0 /* CustomColors.swift */; };
 		EAAF0DD92C5D22EC00302F03 /* BoutonRouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF0DD72C5D22EC00302F03 /* BoutonRouletteView.swift */; };
@@ -66,8 +63,6 @@
 		8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisViewController.swift; sourceTree = "<group>"; };
 		8EACA3FE2C60F47100BA7E28 /* CustomSegmentedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedButton.swift; sourceTree = "<group>"; };
 		8EACA4012C60F59200BA7E28 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
-		8ECBAB542C5CD78700438248 /* NotesEtAvisStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesEtAvisStoryboard.storyboard; sourceTree = "<group>"; };
-		8ECBAB562C5CD78700438248 /* NotesEtAvisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisViewController.swift; sourceTree = "<group>"; };
 		EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EA65D4952C60C00C00BA76C0 /* RouletteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
 		EA65D4972C60C33F00BA76C0 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
@@ -408,7 +403,6 @@
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,
 				8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */,
 				8EACA4022C60F59200BA7E28 /* CustomColors.swift in Sources */,
-				8EACA4002C60F47100BA7E28 /* CustomSegmentedButton.swift in Sources */,
 				EAFDF7402C5BD46900D9782F /* MorpionItem.swift in Sources */,
 				EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */,
 			);
