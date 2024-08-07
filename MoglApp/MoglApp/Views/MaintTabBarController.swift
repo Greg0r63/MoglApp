@@ -14,7 +14,7 @@ class MaintTabBarController: UITabBarController {
         
         let firstVC = UIHostingController(rootView: RouletteView())
         let secondVC = UIHostingController(rootView: NotesEtAvisView())
-        let thirdVC = UIHostingController(rootView: HistoriqueView())
+        let thirdVC = UIHostingController(rootView: ConfigurationView())
         
         firstVC.tabBarItem  = UITabBarItem(title: "Séléction", image: UIImage(named: "RouletteItem"), tag: 0)
         secondVC.tabBarItem = UITabBarItem(title: "Retours", image: UIImage(systemName: "pencil.circle"), tag: 1)
