@@ -10,6 +10,7 @@
 		EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */; };
 		EA65D4962C60C00C00BA76C0 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4952C60C00C00BA76C0 /* RouletteViewModel.swift */; };
 		EA65D4982C60C33F00BA76C0 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4972C60C33F00BA76C0 /* CustomColors.swift */; };
+		EA65D4B12C61751C00BA76C0 /* ModSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4B02C61751C00BA76C0 /* ModSelectionView.swift */; };
 		EAAF0DD92C5D22EC00302F03 /* BoutonRouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF0DD72C5D22EC00302F03 /* BoutonRouletteView.swift */; };
 		EAAF0DDB2C5D272500302F03 /* CustomSegmentedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF0DDA2C5D272500302F03 /* CustomSegmentedButton.swift */; };
 		EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */; };
@@ -36,6 +37,7 @@
 		EAFDF74F2C5BD56600D9782F /* TabBarControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */; };
 		EAFDF7502C5BD56600D9782F /* ListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7492C5BD56600D9782F /* ListeView.swift */; };
 		EAFDF7542C5BD60700D9782F /* HistoriqueViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */; };
+		EAFF05F22C624F5E00C535D1 /* UIGradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF05F12C624F5E00C535D1 /* UIGradientColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,7 @@
 		EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EA65D4952C60C00C00BA76C0 /* RouletteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
 		EA65D4972C60C33F00BA76C0 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		EA65D4B02C61751C00BA76C0 /* ModSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModSelectionView.swift; sourceTree = "<group>"; };
 		EAAF0DD72C5D22EC00302F03 /* BoutonRouletteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoutonRouletteView.swift; sourceTree = "<group>"; };
 		EAAF0DDA2C5D272500302F03 /* CustomSegmentedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedButton.swift; sourceTree = "<group>"; };
 		EAFDF6FF2C5BD13E00D9782F /* MoglApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoglApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,7 @@
 		EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerView.swift; sourceTree = "<group>"; };
 		EAFDF7492C5BD56600D9782F /* ListeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListeView.swift; sourceTree = "<group>"; };
 		EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoriqueViewModels.swift; sourceTree = "<group>"; };
+		EAFF05F12C624F5E00C535D1 /* UIGradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGradientColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 				EAFDF7342C5BD46900D9782F /* JoueurItem.swift */,
 				EAFDF7372C5BD46900D9782F /* MorpionItem.swift */,
 				EA65D4972C60C33F00BA76C0 /* CustomColors.swift */,
+				EAFF05F12C624F5E00C535D1 /* UIGradientColor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,10 +210,11 @@
 			children = (
 				EAAF0DD82C5D22EC00302F03 /* SubViews */,
 				EAFDF7462C5BD56500D9782F /* ConfigurationView.swift */,
-				EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */,
+				EA65D4B02C61751C00BA76C0 /* ModSelectionView.swift */,
 				EAFDF7492C5BD56600D9782F /* ListeView.swift */,
-				EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */,
 				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
+				EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */,
+				EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */,
 				EAFDF7442C5BD56500D9782F /* SplashScreenView.swift */,
 				EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */,
 				EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */,
@@ -359,10 +365,12 @@
 				EAFDF73C2C5BD46900D9782F /* CategorieItem.swift in Sources */,
 				EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */,
 				EAFDF74C2C5BD56600D9782F /* NotesEtAvisView.swift in Sources */,
+				EA65D4B12C61751C00BA76C0 /* ModSelectionView.swift in Sources */,
 				EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */,
 				EAFDF74E2C5BD56600D9782F /* RouletteView.swift in Sources */,
 				EAFDF74D2C5BD56600D9782F /* ConfigurationView.swift in Sources */,
 				EAFDF73D2C5BD46900D9782F /* JoueurItem.swift in Sources */,
+				EAFF05F22C624F5E00C535D1 /* UIGradientColor.swift in Sources */,
 				EAFDF7412C5BD46900D9782F /* AvisSuggestionItem.swift in Sources */,
 				EAFDF73E2C5BD46900D9782F /* ActiviteItem.swift in Sources */,
 				EA65D4982C60C33F00BA76C0 /* CustomColors.swift in Sources */,

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class Categorie {
+class Categorie: Identifiable {
     var id: Int
     var nom: String
     var couleur: Color

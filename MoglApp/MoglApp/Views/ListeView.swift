@@ -7,20 +7,41 @@
 
 import SwiftUI
 
-struct SelectionView: View {
-    @State var selectedoption: Int = 0
+struct ListeView: View {
+    @ObservedObject var categorieViewModel = CategorieViewModel()
+    
+    let columns = [
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+        ]
     var body: some View {
-        ZStack {
-            CustomColors.gradient
-                .ignoresSafeArea()
-            HStack(spacing: 0) {
-                CustomSegmentedButton(action: {selectedoption = 0}, title: "Roulette", width: 120, height: 24, isSelected: selectedoption == 0, selectedTextColor: .white, unselectedTextColor: Color("ColorTabBarItem"), taillePolice: 20, topLeftRadius: 5, topRightRadius: 0, bottomLeftRadius: 5, bottomRightRadius: 0, selectedColor: Color("ColorTabBarItem"), unselectedColor: Color("ColorTabBarItem"))
-                CustomSegmentedButton(action: {selectedoption = 1}, title: "Liste", width: 120, height: 24, isSelected: selectedoption == 1, selectedTextColor: .white, unselectedTextColor: Color("ColorTabBarItem"), taillePolice: 20, topLeftRadius: 0, topRightRadius: 5, bottomLeftRadius: 0, bottomRightRadius: 5, selectedColor: Color("ColorTabBarItem"), unselectedColor: Color("ColorTabBarItem"))
+        NavigationStack {
+            ZStack {
+                LazyVGrid(columns: columns) {
+                    ForEach(categorieViewModel.categorie.prefix(6)) { categorie in
+                        NavigationLink(destination: SplashScreen()) {
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(categorie.couleur)
+                                .frame(width: 150, height: 150)
+                                .overlay(
+                                    Text(categorie.nom)
+                                        .foregroundStyle(.black)
+                                        .font(.system(size: 20, weight: .bold, design: .default))
+                                )
+                                .overlay(RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.black, lineWidth: 2)
+                                )
+                        }
+                    }
+                    .padding()
+                }
+                .padding(.top, 100)
             }
         }
+        .background(.clear)
     }
 }
 
 #Preview {
-    SelectionView()
+    ListeView()
 }
