@@ -19,7 +19,8 @@ struct ListeView: View {
             ZStack {
                 LazyVGrid(columns: columns) {
                     ForEach(categorieViewModel.categorie.prefix(6)) { categorie in
-                        NavigationLink(destination: SplashScreen()) {
+                        // Destination a implémanter
+                        NavigationLink(destination: ConfigurationView()) {
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(categorie.couleur)
                                 .frame(width: 150, height: 150)
