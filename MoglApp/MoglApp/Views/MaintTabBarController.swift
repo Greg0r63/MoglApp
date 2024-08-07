@@ -12,7 +12,8 @@ class MaintTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let firstVC = UIHostingController(rootView: RouletteView())
+        let firstVC = UIHostingController(rootView: ModSelectionView())
+        firstVC.view.backgroundColor = UIColor(.clear)
         let secondVC = UIHostingController(rootView: NotesEtAvisView())
         let thirdVC = UIHostingController(rootView: ConfigurationView())
         
