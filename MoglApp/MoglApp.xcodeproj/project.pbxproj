@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */; };
-		8EACA4002C60F47100BA7E28 /* CustomSegmentedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACA3FE2C60F47100BA7E28 /* CustomSegmentedButton.swift */; };
+		8E8572E62C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */; };
+		8E8572E82C63B50F00756AC9 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */; };
 		8EACA4022C60F59200BA7E28 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACA4012C60F59200BA7E28 /* CustomColors.swift */; };
-		8ECBAB572C5CD78700438248 /* NotesEtAvisStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECBAB542C5CD78700438248 /* NotesEtAvisStoryboard.storyboard */; };
-		8ECBAB592C5CD78700438248 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECBAB562C5CD78700438248 /* NotesEtAvisViewController.swift */; };
 		EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */; };
 		EA65D4982C60C33F00BA76C0 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4972C60C33F00BA76C0 /* CustomColors.swift */; };
 		EAAF0DD92C5D22EC00302F03 /* BoutonRouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF0DD72C5D22EC00302F03 /* BoutonRouletteView.swift */; };
 		EAAF0DDB2C5D272500302F03 /* CustomSegmentedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF0DDA2C5D272500302F03 /* CustomSegmentedButton.swift */; };
-		EAC628F72C5C302500F78424 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC628F62C5C302500F78424 /* RouletteViewModel.swift */; };
 		EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */; };
 		EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7062C5BD13E00D9782F /* Item.swift */; };
 		EAFDF7092C5BD13F00D9782F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFDF7082C5BD13F00D9782F /* Assets.xcassets */; };
@@ -61,10 +59,10 @@
 
 /* Begin PBXFileReference section */
 		8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewModel.swift; sourceTree = "<group>"; };
+		8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesEtAvisStoryboard.storyboard; sourceTree = "<group>"; };
+		8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisViewController.swift; sourceTree = "<group>"; };
 		8EACA3FE2C60F47100BA7E28 /* CustomSegmentedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegmentedButton.swift; sourceTree = "<group>"; };
 		8EACA4012C60F59200BA7E28 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
-		8ECBAB542C5CD78700438248 /* NotesEtAvisStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesEtAvisStoryboard.storyboard; sourceTree = "<group>"; };
-		8ECBAB562C5CD78700438248 /* NotesEtAvisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisViewController.swift; sourceTree = "<group>"; };
 		EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EA65D4952C60C00C00BA76C0 /* RouletteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
 		EA65D4972C60C33F00BA76C0 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
@@ -132,6 +130,8 @@
 				EAFDF7442C5BD56500D9782F /* SplashScreenView.swift */,
 				EAC628FE2C5CE7D500F78424 /* BoutonRouletteView.swift */,
 				EA65D4952C60C00C00BA76C0 /* RouletteViewModel.swift */,
+				EAC628F62C5C302500F78424 /* RouletteViewModel.swift */,
+				8EACA3FE2C60F47100BA7E28 /* CustomSegmentedButton.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -226,6 +226,8 @@
 		EAFDF72F2C5BD29100D9782F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */,
+				8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */,
 				EAAF0DD82C5D22EC00302F03 /* SubViews */,
 				EAFDF7462C5BD56500D9782F /* ConfigurationView.swift */,
 				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
@@ -353,6 +355,7 @@
 			files = (
 				EAFDF70C2C5BD13F00D9782F /* Preview Assets.xcassets in Resources */,
 				EAFDF7092C5BD13F00D9782F /* Assets.xcassets in Resources */,
+				8E8572E62C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +380,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAC628F72C5C302500F78424 /* RouletteViewModel.swift in Sources */,
 				EAAF0DDB2C5D272500302F03 /* CustomSegmentedButton.swift in Sources */,
 				EAFDF73C2C5BD46900D9782F /* CategorieItem.swift in Sources */,
 				EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */,
@@ -387,6 +389,7 @@
 				EAFDF74D2C5BD56600D9782F /* ConfigurationView.swift in Sources */,
 				EAFDF73D2C5BD46900D9782F /* JoueurItem.swift in Sources */,
 				EAFDF7412C5BD46900D9782F /* AvisSuggestionItem.swift in Sources */,
+				8E8572E82C63B50F00756AC9 /* NotesEtAvisViewController.swift in Sources */,
 				EAFDF73E2C5BD46900D9782F /* ActiviteItem.swift in Sources */,
 				EA65D4982C60C33F00BA76C0 /* CustomColors.swift in Sources */,
 				EAFDF74A2C5BD56600D9782F /* HistoriqueView.swift in Sources */,
@@ -400,7 +403,6 @@
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,
 				8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */,
 				8EACA4022C60F59200BA7E28 /* CustomColors.swift in Sources */,
-				8EACA4002C60F47100BA7E28 /* CustomSegmentedButton.swift in Sources */,
 				EAFDF7402C5BD46900D9782F /* MorpionItem.swift in Sources */,
 				EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */,
 			);
