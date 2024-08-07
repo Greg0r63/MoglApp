@@ -30,7 +30,9 @@ struct RouletteView: View {
     var resultat: Int = 0
 //    let colors: [Color] = [.moglRed, .moglOrange, .moglYellow, .moglGreen, .moglBlue, .moglViolet]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            
+        }
     }
 }
 
