@@ -51,6 +51,13 @@ struct RouletteView: View {
             LinearGradient(colors: [.moglBackgroundTop, .moglBackgroundBottom], startPoint: .top, endPoint: .bottom)
         }
         .edgesIgnoringSafeArea(.all)
+        NavigationStack {
+            
+        }
+        .background {
+            LinearGradient(colors: [.moglBackgroundTop, .moglBackgroundBottom], startPoint: .top, endPoint: .bottom)
+        }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
