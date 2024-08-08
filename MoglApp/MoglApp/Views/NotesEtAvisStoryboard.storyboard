@@ -146,6 +146,7 @@
             <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
     <resources>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
