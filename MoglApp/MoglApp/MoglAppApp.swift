@@ -26,8 +26,6 @@ struct MoglAppApp: App {
     var body: some Scene {
         WindowGroup {
             TabBarControllerView()
-                .ignoresSafeArea()
         }
-        .modelContainer(sharedModelContainer)
     }
 }

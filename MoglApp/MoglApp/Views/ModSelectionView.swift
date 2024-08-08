@@ -49,9 +49,7 @@ struct ModSelectionView: View {
                             unselectedColor: Color("ColorTabBarItem")
                         )
                     }
-                    .padding()
-                    .frame(height: 60) // Fix the height here
-                    
+                    .padding(.top, 10)
                     if selectedView == 0 {
                         RouletteView()
                     } else {
@@ -60,7 +58,6 @@ struct ModSelectionView: View {
                 }
             }
         }
-        .background(CustomColors.gradient)
     }
 }
 

@@ -35,10 +35,9 @@ struct ListeView: View {
                     }
                     .padding()
                 }
-                .padding(.top, 100)
+                .padding(.top, 10)
             }
         }
-        .background(.clear)
     }
 }
 
