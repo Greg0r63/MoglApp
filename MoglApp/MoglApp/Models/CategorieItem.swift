@@ -12,10 +12,12 @@ class Categorie: Identifiable {
     var id = UUID()
     var nom: String
     var couleur: Color
+    var proportion: Double
     
-    init(id: Int, nom: String, couleur: Color) {
+    init(nom: String, couleur: Color, proportion: Double) {
         self.nom = nom
         self.couleur = couleur
+        self.proportion = proportion
     }
 }
 

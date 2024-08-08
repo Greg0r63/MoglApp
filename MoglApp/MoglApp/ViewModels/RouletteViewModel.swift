@@ -8,22 +8,44 @@
 import Foundation
 import SwiftUI
 
-class CategorieViewModel: ObservableObject {
+class RouletteViewModel: ObservableObject {
     @Published var categorie: [Categorie] = []
     init() {
         categorie = [
-            Categorie(id: 1, nom: "Anecdote", couleur: .moglRed),
-            Categorie(id: 2, nom: "Jeux de mots", couleur: .moglOrange),
-            Categorie(id: 3, nom: "Imagination", couleur: .moglYellow),
-            Categorie(id: 4, nom: "Comment faire", couleur: .moglGreen),
-            Categorie(id: 5, nom: "Collaboratif", couleur: .moglBlue),
-            Categorie(id: 6, nom: "Jeux", couleur: .moglViolet),
-            Categorie(id: 7, nom: "Anecdote", couleur: .moglRed),
-            Categorie(id: 8, nom: "Jeux de mots", couleur: .moglOrange),
-            Categorie(id: 9, nom: "Imagination", couleur: .moglYellow),
-            Categorie(id: 10, nom: "Comment faire", couleur: .moglGreen),
-            Categorie(id: 11, nom: "Collaboratif", couleur: .moglBlue),
-            Categorie(id: 12, nom: "Jeux", couleur: .moglViolet)
+            Categorie(nom: "Anecdote", couleur: .moglRed, proportion: 1 / 12),
+            Categorie(nom: "Jeux de mots", couleur: .moglOrange, proportion: 1 / 12),
+            Categorie(nom: "Imagination", couleur: .moglYellow, proportion: 1 / 12),
+            Categorie(nom: "Comment faire", couleur: .moglGreen, proportion: 1 / 12),
+            Categorie(nom: "Collaboratif", couleur: .moglBlue, proportion: 1 / 12),
+            Categorie(nom: "Jeux", couleur: .moglViolet, proportion: 1 / 12),
+            Categorie(nom: "Anecdote", couleur: .moglRed, proportion: 1 / 12),
+            Categorie(nom: "Jeux de mots", couleur: .moglOrange, proportion: 1 / 12),
+            Categorie(nom: "Imagination", couleur: .moglYellow, proportion: 1 / 12),
+            Categorie(nom: "Comment faire", couleur: .moglGreen, proportion: 1 / 12),
+            Categorie(nom: "Collaboratif", couleur: .moglBlue, proportion: 1 / 12),
+            Categorie(nom: "Jeux", couleur: .moglViolet, proportion: 1 / 12)
         ]
+    }
+    func pickNumber() -> Int {
+        return Int.random(in: (categorie.count * 3)...(categorie.count * 4))
+    }
+    func calculResultat(resultat: Int, numeroChoisi: Int) -> Int {
+        return Int((resultat + numeroChoisi)) % 6
+    }
+    func calculCouleur(resultat: Int) -> Color {
+        switch resultat {
+        case 1 :
+            return .moglViolet
+        case 2 :
+            return .moglBlue
+        case 3 :
+            return .moglGreen
+        case 4 :
+            return .moglYellow
+        case 5:
+            return .moglOrange
+        default :
+            return .moglRed
+            }
     }
 }

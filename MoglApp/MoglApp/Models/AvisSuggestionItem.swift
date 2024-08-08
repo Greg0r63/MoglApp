@@ -6,17 +6,28 @@
 //
 
 import Foundation
-
+/**
+ Documentation de la classe AvisSuggestion.
+ 
+ Cette classe représente des notes et suggestion que l'utilisateur peut donner sur l'ensemble de l'application.
+ */
 class AvisSuggestion {
-    var id : Int
+    var id : UUID = UUID()
+    // Note
     var note: Int
-    var avis: String
+    // Suggestion
     var suggestion: String
     
-    init(id: Int, note: Int, avis: String, suggestion: String) {
+    /**
+     Initialise une instance de `AvisSuggestion` avec des valeurs spécifiques.
+
+     - Parameters:
+       - note: Note donner par l'utilisteur
+       - suggestion: Suggestion donner par l'utilisateur
+     */
+    init(id: UUID = UUID(), note: Int, suggestion: String) {
         self.id = id
         self.note = note
-        self.avis = avis
         self.suggestion = suggestion
     }
 }
