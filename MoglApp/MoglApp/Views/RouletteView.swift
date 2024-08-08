@@ -49,15 +49,12 @@ struct RouletteView: View {
         }
         .background {
             LinearGradient(colors: [.moglBackgroundTop, .moglBackgroundBottom], startPoint: .top, endPoint: .bottom)
-        }
-        .edgesIgnoringSafeArea(.all)            
-        }
-        .background {
-            LinearGradient(colors: [.moglBackgroundTop, .moglBackgroundBottom], startPoint: .top, endPoint: .bottom)
-        }
-        .edgesIgnoringSafeArea(.all)
+                .edgesIgnoringSafeArea(.all)
+
     }
-}
+        
+        }
+    }
 
 #Preview {
     RouletteView()
