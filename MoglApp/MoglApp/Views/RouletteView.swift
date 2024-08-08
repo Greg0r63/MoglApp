@@ -47,11 +47,6 @@ struct RouletteView: View {
             }
             Spacer()
         }
-        .background {
-            LinearGradient(colors: [.moglBackgroundTop, .moglBackgroundBottom], startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
-
-    }
         
         }
     }

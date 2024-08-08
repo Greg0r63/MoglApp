@@ -17,7 +17,7 @@ struct ConfigurationView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                CustomColors.gradient.ignoresSafeArea()
+                CustomColors.gradient.ignoresSafeArea(edges: .top)
                 
                 VStack {
                     HStack {
@@ -85,8 +85,7 @@ struct ConfigurationView: View {
                             .cornerRadius(8)
                     }
                     .padding(.top, 20)
-                    
-                    Spacer()
+                    .padding(.bottom, 20)
                 }
                 .padding(.horizontal, 16)
                 .navigationBarHidden(true)

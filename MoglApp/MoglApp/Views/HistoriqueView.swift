@@ -9,8 +9,8 @@ import SwiftUI
 
 struct HistoriqueView: View {
     var body: some View {
-        HistoriqueViewModelRepresentable()
-            .ignoresSafeArea()
+            HistoriqueViewModelRepresentable()
+                .ignoresSafeArea()
     }
 }
 

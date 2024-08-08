@@ -17,6 +17,7 @@ struct TabBarControllerView: UIViewControllerRepresentable { // Structure qui do
                 
                 let viewController2 = UIHostingController(rootView: NotesEtAvisView())
                 viewController2.tabBarItem = UITabBarItem(title: "Retours", image: UIImage(systemName: "pencil.circle"), tag: 1)
+        
                 
                 let viewController3 = UIHostingController(rootView: ConfigurationView())
                 viewController3.tabBarItem = UITabBarItem(title: "Partie", image: UIImage(systemName: "person.3"), tag: 2)
@@ -27,6 +28,7 @@ struct TabBarControllerView: UIViewControllerRepresentable { // Structure qui do
                 tabBarController.viewControllers = [viewController1, viewController2, viewController3, viewController4]
                 
                 tabBarController.tabBar.tintColor = UIColor(named: "ColorTabBarItem")
+                tabBarController.tabBar.backgroundColor = UIColor.white
         return tabBarController
     }
     
