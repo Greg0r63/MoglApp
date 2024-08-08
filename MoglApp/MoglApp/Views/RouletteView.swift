@@ -16,7 +16,6 @@ struct RouletteView: View {
     @State var couleurChoisie: Color = .moglRed
     
     var body: some View {
-        NavigationStack {
         VStack {
             Spacer()
             ZStack {
