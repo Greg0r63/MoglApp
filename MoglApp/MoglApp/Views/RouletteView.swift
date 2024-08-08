@@ -2,39 +2,59 @@
 //  RouletteView.swift
 //  MoglApp
 //
-//  Created by Apprenant 176 on 29/07/2024.
+//  Created by Apprenant 171 on 29/07/2024.
 //
 
 import SwiftUI
 import Charts
 
-struct Pie: Shape {
-    var startAngle: Angle
-    var endAngle: Angle
-    func path(in rect: CGRect) -> Path {
-        let center = CGPoint(x: rect.midX, y: rect.midY)
-        let radius = min(rect.width, rect.height) / 2
-        let start = CGPoint(
-            x: center.x + radius * cos(CGFloat(startAngle.radians)),
-            y: center.y + radius * sin(CGFloat(startAngle.radians))
-        )
-        var path = Path()
-        path.move(to: center)
-        path.addLine(to: start)
-        path.addArc(center: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true)
-        path.addLine(to: center)
-        return path
-    }
-}
 struct RouletteView: View {
-    var resultat: Int = 0
-//    let colors: [Color] = [.moglRed, .moglOrange, .moglYellow, .moglGreen, .moglBlue, .moglViolet]
+    @StateObject var categorieVM = RouletteViewModel()
+    @State var tourne: Int = 0
+    @State var numeroChoisi: Int = 0
+    @State var resultat: Int = 0
+    @State var couleurChoisie: Color = .moglRed
+    
     var body: some View {
-        NavigationStack {
-            
+        VStack {
+            Spacer()
+            ZStack {
+                Chart {
+                    ForEach(categorieVM.categorie) { portion in
+                        SectorMark(angle: .value("Portion", portion.proportion),
+                                   innerRadius: 60,
+                                   
+                                   angularInset: 1)
+                            .foregroundStyle(portion.couleur)
+                            .cornerRadius(5)
+                    }
+                }
+                .frame(width: 360, height: 360)
+                .rotationEffect(.degrees(Double(360 / 12 / -2)))
+                .rotationEffect(.degrees(Double(tourne)))
+                Button {
+                    withAnimation(.spring(response: 3, dampingFraction: 1)) {
+                        numeroChoisi = categorieVM.pickNumber()
+                        tourne += 360 / 12 * numeroChoisi
+                        resultat = categorieVM.calculResultat(resultat: resultat, numeroChoisi: numeroChoisi)
+                        print(resultat)
+                        couleurChoisie = categorieVM.calculCouleur(resultat: resultat)
+                        print(couleurChoisie)
+                    }
+                } label: {
+                    BouttonRouletteView()
+                }
+            }
+            Spacer()
+        }
+        .background {
+            LinearGradient(colors: [.moglBackgroundTop, .moglBackgroundBottom], startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+
+    }
+        
         }
     }
-}
 
 #Preview {
     RouletteView()

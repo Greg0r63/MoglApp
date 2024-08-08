@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListeView: View {
-    @ObservedObject var categorieViewModel = CategorieViewModel()
+    @ObservedObject var categorieViewModel = RouletteViewModel()
     
     let columns = [
             GridItem(.flexible()),

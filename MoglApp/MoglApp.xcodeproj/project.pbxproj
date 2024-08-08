@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EAC628F72C5C302500F78424 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC628F62C5C302500F78424 /* RouletteViewModel.swift */; };
 		8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */; };
 		8E8572E62C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */; };
 		8E8572E82C63B50F00756AC9 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */; };
@@ -242,6 +243,12 @@
 				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
 				EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */,
 				EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */,
+				EAFDF7442C5BD56500D9782F /* SplashScreenView.swift */,
+				EAFDF7462C5BD56500D9782F /* ConfigurationView.swift */,
+				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
+				EAFDF7492C5BD56600D9782F /* ListeView.swift */,
+				EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */,
+				EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */,
 				EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */,
 				EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */,
 			);
@@ -253,6 +260,7 @@
 			children = (
 				EA3B8F802C63BF520026C012 /* RouletteViewModel.swift */,
 				EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */,
+				EA65D4952C60C00C00BA76C0 /* RouletteViewModel.swift */,
 				8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */,
 			);
 			path = ViewModels;
