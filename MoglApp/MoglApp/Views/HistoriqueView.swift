@@ -9,7 +9,17 @@ import SwiftUI
 
 struct HistoriqueView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HistoriqueViewModelRepresentable()
+            .ignoresSafeArea()
+    }
+}
+
+struct HistoriqueViewModelRepresentable: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> some UIViewController {
+        return HistoriqueViewController()
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
     }
 }
 
