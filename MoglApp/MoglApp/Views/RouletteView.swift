@@ -16,6 +16,7 @@ struct RouletteView: View {
     @State var couleurChoisie: Color = .moglRed
     
     var body: some View {
+        NavigationStack {
         VStack {
             Spacer()
             ZStack {
@@ -50,9 +51,7 @@ struct RouletteView: View {
         .background {
             LinearGradient(colors: [.moglBackgroundTop, .moglBackgroundBottom], startPoint: .top, endPoint: .bottom)
         }
-        .edgesIgnoringSafeArea(.all)
-        NavigationStack {
-            
+        .edgesIgnoringSafeArea(.all)            
         }
         .background {
             LinearGradient(colors: [.moglBackgroundTop, .moglBackgroundBottom], startPoint: .top, endPoint: .bottom)
