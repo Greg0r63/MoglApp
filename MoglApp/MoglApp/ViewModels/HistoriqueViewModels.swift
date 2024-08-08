@@ -7,6 +7,15 @@
 
 import SwiftUI
 
-class HistoriqueViewModel: ObservableObject {
-    @Published var historique: [Historique] = []
+class HistoriqueViewModel {
+    static let shared = HistoriqueViewModel()
+    
+    var items: [Historique]
+    
+    init() {
+        self.items = [
+            Historique(gameName: "Jeu 1", datePlayed: Date(), joueurs: [Joueur(nom: "Massi", couleur: .green, aJoue: true)]),
+            Historique(gameName: "Jeu 2", datePlayed: Date(), joueurs: [])
+        ]
+    }
 }

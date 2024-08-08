@@ -15,9 +15,9 @@
 		8E8572E82C63B50F00756AC9 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */; };
 		8EACA4022C60F59200BA7E28 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACA4012C60F59200BA7E28 /* CustomColors.swift */; };
 		EA3B8F812C63BF520026C012 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B8F802C63BF520026C012 /* RouletteViewModel.swift */; };
-		EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */; };
 		EA65D4982C60C33F00BA76C0 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4972C60C33F00BA76C0 /* CustomColors.swift */; };
 		EA65D4B12C61751C00BA76C0 /* ModSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4B02C61751C00BA76C0 /* ModSelectionView.swift */; };
+		EA8FC74E2C651A7900E23B1F /* HistoriqueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FC74D2C651A7900E23B1F /* HistoriqueViewController.swift */; };
 		EAAF0DD92C5D22EC00302F03 /* BoutonRouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF0DD72C5D22EC00302F03 /* BoutonRouletteView.swift */; };
 		EAAF0DDB2C5D272500302F03 /* CustomSegmentedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF0DDA2C5D272500302F03 /* CustomSegmentedButton.swift */; };
 		EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7022C5BD13E00D9782F /* MoglAppApp.swift */; };
@@ -72,10 +72,10 @@
 		8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisViewController.swift; sourceTree = "<group>"; };
 		8EACA4012C60F59200BA7E28 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		EA3B8F802C63BF520026C012 /* RouletteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
-		EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaintTabBarController.swift; sourceTree = "<group>"; };
 		EA65D4952C60C00C00BA76C0 /* RouletteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
 		EA65D4972C60C33F00BA76C0 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		EA65D4B02C61751C00BA76C0 /* ModSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModSelectionView.swift; sourceTree = "<group>"; };
+		EA8FC74D2C651A7900E23B1F /* HistoriqueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriqueViewController.swift; sourceTree = "<group>"; };
 		EAAF0DD72C5D22EC00302F03 /* BoutonRouletteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoutonRouletteView.swift; sourceTree = "<group>"; };
 		EAAF0DDA2C5D272500302F03 /* CustomSegmentedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedButton.swift; sourceTree = "<group>"; };
 		EAC628F62C5C302500F78424 /* RouletteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 				EAFDF7452C5BD56500D9782F /* NotesEtAvisView.swift */,
 				EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */,
 				EAFDF7482C5BD56500D9782F /* TabBarControllerView.swift */,
-				EA4FECF12C5CC72600138B4A /* MaintTabBarController.swift */,
+				EA8FC74D2C651A7900E23B1F /* HistoriqueViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -397,6 +397,7 @@
 				EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */,
 				EAFDF74C2C5BD56600D9782F /* NotesEtAvisView.swift in Sources */,
 				EA65D4B12C61751C00BA76C0 /* ModSelectionView.swift in Sources */,
+				EA8FC74E2C651A7900E23B1F /* HistoriqueViewController.swift in Sources */,
 				EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */,
 				EAFDF74E2C5BD56600D9782F /* RouletteView.swift in Sources */,
 				EAFDF74D2C5BD56600D9782F /* ConfigurationView.swift in Sources */,
@@ -422,7 +423,6 @@
 				7538E0942C611F7400EB3162 /* LinearGradientView.swift in Sources */,
 				EAFDF7402C5BD46900D9782F /* MorpionItem.swift in Sources */,
 				7538E08F2C611E6B00EB3162 /* GuessTheFlagView.swift in Sources */,
-				EA4FECF22C5CC72600138B4A /* MaintTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
