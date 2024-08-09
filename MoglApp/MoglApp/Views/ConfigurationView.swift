@@ -7,25 +7,29 @@
 
 import SwiftUI
 
+/**
+ Documentation de `ConfigurationView`.
+ 
+ La vue `ConfigurationView` permet à l'utilisateur de configurer les options et d'ajouter des joueurs avant de commencer une session.
+
+ Cette vue comprend des boutons segmentés pour sélectionner une option, un champ de texte pour ajouter des joueurs, et une liste des joueurs ajoutés.
+ */
 struct ConfigurationView: View {
-    @State var selectedOption: Int = 0
-    @State private var name: String = ""
-    @State private var joueurs: [Joueur] = []
-    
-    let colors: [Color] = [.purple, .red, .orange, .yellow, .green, .blue]
+    /// Le ViewModel qui gère l'état de la vue `ConfigurationView`.
+    @StateObject private var viewModel = ConfigurationViewModel()
 
     var body: some View {
         NavigationView {
             ZStack {
-                CustomColors.gradient.ignoresSafeArea()
+                CustomColors.gradient.ignoresSafeArea(edges: .top)
                 
                 VStack {
                     HStack {
-                        CustomSegmentedButton(action: { selectedOption = 0 },
-                                              title: "Brisons la glace", width: 140, height: 70, isSelected: selectedOption == 0, selectedTextColor: .white, unselectedTextColor: Color("ColorTabBarItem"), taillePolice: 22, topLeftRadius: 7, topRightRadius: 0, bottomLeftRadius: 7, bottomRightRadius: 0, selectedColor: Color("ColorTabBarItem"), unselectedColor: Color("ColorTabBarItem").opacity(0.24))
+                        CustomSegmentedButton(action: { viewModel.selectedOption = 0 },
+                                              title: "Brisons la glace", width: 140, height: 70, isSelected: viewModel.selectedOption == 0, selectedTextColor: .white, unselectedTextColor: Color("ColorTabBarItem"), taillePolice: 22, topLeftRadius: 8, topRightRadius: 0, bottomLeftRadius: 8, bottomRightRadius: 0, selectedColor: Color("ColorTabBarItem"), unselectedColor: Color("ColorTabBarItem").opacity(0.24))
                         
-                        CustomSegmentedButton(action: { selectedOption = 1 },
-                                              title: "Rapprochons nous", width: 140, height: 70, isSelected: selectedOption == 1, selectedTextColor: .white, unselectedTextColor: Color("ColorTabBarItem"), taillePolice: 22, topLeftRadius: 0, topRightRadius: 7, bottomLeftRadius: 0, bottomRightRadius: 7, selectedColor: Color("ColorTabBarItem"), unselectedColor: Color("ColorTabBarItem").opacity(0.24))
+                        CustomSegmentedButton(action: { viewModel.selectedOption = 1 },
+                                              title: "Rapprochons nous", width: 140, height: 70, isSelected: viewModel.selectedOption == 1, selectedTextColor: .white, unselectedTextColor: Color("ColorTabBarItem"), taillePolice: 22, topLeftRadius: 0, topRightRadius: 8, bottomLeftRadius: 0, bottomRightRadius: 8, selectedColor: Color("ColorTabBarItem"), unselectedColor: Color("ColorTabBarItem").opacity(0.24))
                     }
                     .padding(.bottom, 50.0)
                     
@@ -35,14 +39,14 @@ struct ConfigurationView: View {
                         .multilineTextAlignment(.center)
 
                     HStack {
-                        TextField("Nom", text: $name)
+                        TextField("Nom", text: $viewModel.name)
                             .padding()
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .autocapitalization(.words)
                             .disableAutocorrection(true)
                         
                         Button(action: {
-                            addJoueur()
+                            viewModel.addJoueur()
                         }) {
                             Text("Ajouter")
                                 .font(.title3)
@@ -58,7 +62,7 @@ struct ConfigurationView: View {
                     
                     ScrollView {
                         VStack(alignment: .leading) {
-                            ForEach(joueurs) { joueur in
+                            ForEach(viewModel.joueurs) { joueur in
                                 HStack {
                                     Circle()
                                         .fill(joueur.couleur)
@@ -85,24 +89,15 @@ struct ConfigurationView: View {
                             .cornerRadius(8)
                     }
                     .padding(.top, 20)
-                    
-                    Spacer()
+                    .padding(.bottom, 20)
                 }
                 .padding(.horizontal, 16)
                 .navigationBarHidden(true)
             }
         }
     }
-    
-    private func addJoueur() {
-        if !name.isEmpty {
-            let randomColor = colors.randomElement() ?? .black
-            let newJoueur = Joueur(nom: name, couleur: randomColor, aJoue: false)
-            joueurs.append(newJoueur)
-            name = ""
-        }
-    }
 }
+
 
 #Preview {
     ConfigurationView()
