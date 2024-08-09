@@ -19,18 +19,35 @@ struct ListeView: View {
             ZStack {
                 LazyVGrid(columns: columns) {
                     ForEach(categorieViewModel.categorie.prefix(6)) { categorie in
-                        NavigationLink(destination: ConfigurationView()) {
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(categorie.couleur)
-                                .frame(width: 150, height: 150)
-                                .overlay(
-                                    Text(categorie.nom)
-                                        .foregroundStyle(.black)
-                                        .font(.system(size: 20, weight: .bold, design: .default))
-                                )
-                                .overlay(RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color.black, lineWidth: 2)
-                                )
+                        if categorie.nom == "Anecdote" {
+                            NavigationLink(destination: AnecdoteView()) {
+                                RoundedRectangle(cornerRadius: 20)
+                                    .fill(categorie.couleur)
+                                    .frame(width: 150, height: 150)
+                                    .overlay(
+                                        Text(categorie.nom)
+                                            .foregroundStyle(.black)
+                                            .font(.system(size: 20, weight: .bold, design: .default))
+                                    )
+                                    .overlay(RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color.black, lineWidth: 2)
+                                    )
+                            }
+                        }
+                        else {
+                            NavigationLink(destination: GuessTheFlagView()) {
+                                RoundedRectangle(cornerRadius: 20)
+                                    .fill(categorie.couleur)
+                                    .frame(width: 150, height: 150)
+                                    .overlay(
+                                        Text(categorie.nom)
+                                            .foregroundStyle(.black)
+                                            .font(.system(size: 20, weight: .bold, design: .default))
+                                    )
+                                    .overlay(RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color.black, lineWidth: 2)
+                                    )
+                            }
                         }
                     }
                     .padding()
