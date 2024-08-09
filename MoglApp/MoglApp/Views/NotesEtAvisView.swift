@@ -26,7 +26,6 @@ struct NotesEtAvisView: UIViewControllerRepresentable {
         guard let finalVC = UIStoryboard(name: "NotesEtAvisStoryboard", bundle: .main).instantiateViewController(withIdentifier: "NotesEtAvisViewController") as? NotesEtAvisViewController else {
             fatalError("Cannot instantiate NotesEtAvisViewController")
         }
-        
         return finalVC
     }
     

@@ -14,53 +14,92 @@ struct ModSelectionView: View {
         NavigationStack {
             ZStack {
                 CustomColors.gradient
-                VStack {
-                    HStack(spacing: 0) {
-                        CustomSegmentedButton(
-                            action: { selectedView = 0 },
-                            title: "Roulette",
-                            width: 120,
-                            height: 24,
-                            isSelected: selectedView == 0,
-                            selectedTextColor: .white,
-                            unselectedTextColor: Color("ColorTabBarItem"),
-                            taillePolice: 20,
-                            topLeftRadius: 5,
-                            topRightRadius: 0,
-                            bottomLeftRadius: 5,
-                            bottomRightRadius: 0,
-                            selectedColor: Color("ColorTabBarItem"),
-                            unselectedColor: Color("ColorTabBarItem")
-                        )
-                        CustomSegmentedButton(
-                            action: { selectedView = 1 },
-                            title: "Liste",
-                            width: 120,
-                            height: 24,
-                            isSelected: selectedView == 1,
-                            selectedTextColor: .white,
-                            unselectedTextColor: Color("ColorTabBarItem"),
-                            taillePolice: 20,
-                            topLeftRadius: 0,
-                            topRightRadius: 5,
-                            bottomLeftRadius: 0,
-                            bottomRightRadius: 5,
-                            selectedColor: Color("ColorTabBarItem"),
-                            unselectedColor: Color("ColorTabBarItem")
-                        )
-                    }
-                    .padding()
-                    .frame(height: 60) // Fix the height here
-                    
-                    if selectedView == 0 {
-                        RouletteView()
-                    } else {
-                        ListeView()
+                    .ignoresSafeArea(edges: .top)
+                GeometryReader { geometry in
+                    VStack {
+                        if selectedView == 0 {
+                            HStack(spacing: 0) {
+                                CustomSegmentedButton(
+                                    action: { selectedView = 0 },
+                                    title: "Roulette",
+                                    width: 120,
+                                    height: 24,
+                                    isSelected: selectedView == 0,
+                                    selectedTextColor: .white,
+                                    unselectedTextColor: Color("ColorTabBarItem"),
+                                    taillePolice: 20,
+                                    topLeftRadius: 5,
+                                    topRightRadius: 0,
+                                    bottomLeftRadius: 5,
+                                    bottomRightRadius: 0,
+                                    selectedColor: Color("ColorTabBarItem"),
+                                    unselectedColor: Color("ColorTabBarItem")
+                                )
+                                CustomSegmentedButton(
+                                    action: { selectedView = 1 },
+                                    title: "Liste",
+                                    width: 120,
+                                    height: 24,
+                                    isSelected: selectedView == 1,
+                                    selectedTextColor: .white,
+                                    unselectedTextColor: Color("ColorTabBarItem"),
+                                    taillePolice: 20,
+                                    topLeftRadius: 0,
+                                    topRightRadius: 5,
+                                    bottomLeftRadius: 0,
+                                    bottomRightRadius: 5,
+                                    selectedColor: Color("ColorTabBarItem"),
+                                    unselectedColor: Color("ColorTabBarItem")
+                                )
+                            }
+                            .padding(.top, 10)
+                            .padding(.leading)
+                            RouletteView()
+                                .padding(.leading)
+                                .padding(.top, -200)
+                        } else {
+                            HStack(spacing: 0) {
+                                CustomSegmentedButton(
+                                    action: { selectedView = 0 },
+                                    title: "Roulette",
+                                    width: 120,
+                                    height: 24,
+                                    isSelected: selectedView == 0,
+                                    selectedTextColor: .white,
+                                    unselectedTextColor: Color("ColorTabBarItem"),
+                                    taillePolice: 20,
+                                    topLeftRadius: 5,
+                                    topRightRadius: 0,
+                                    bottomLeftRadius: 5,
+                                    bottomRightRadius: 0,
+                                    selectedColor: Color("ColorTabBarItem"),
+                                    unselectedColor: Color("ColorTabBarItem")
+                                )
+                                CustomSegmentedButton(
+                                    action: { selectedView = 1 },
+                                    title: "Liste",
+                                    width: 120,
+                                    height: 24,
+                                    isSelected: selectedView == 1,
+                                    selectedTextColor: .white,
+                                    unselectedTextColor: Color("ColorTabBarItem"),
+                                    taillePolice: 20,
+                                    topLeftRadius: 0,
+                                    topRightRadius: 5,
+                                    bottomLeftRadius: 0,
+                                    bottomRightRadius: 5,
+                                    selectedColor: Color("ColorTabBarItem"),
+                                    unselectedColor: Color("ColorTabBarItem")
+                                )
+                            }
+                            .padding(.top, 10)
+                            ListeView()
+                                .padding(.top, 30)
+                        }
                     }
                 }
             }
         }
-        .background(CustomColors.gradient)
     }
 }
 
