@@ -55,8 +55,8 @@ struct ModSelectionView: View {
                             .padding(.top, 10)
                             .padding(.leading)
                             RouletteView()
-                                .padding(.leading)
-                                .padding(.top, -200)
+                                .padding()
+                                .padding(.top, 70)
                         } else {
                             HStack(spacing: 0) {
                                 CustomSegmentedButton(

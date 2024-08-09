@@ -16,10 +16,7 @@ struct RouletteView: View {
     @State var couleurChoisie: Color = .moglRed
     
     var body: some View {
-        ZStack {
-            RouletteViewControllerRepresentable()
             VStack {
-                
                 Spacer()
                 ZStack {
                     Chart {
@@ -50,8 +47,10 @@ struct RouletteView: View {
                     Image("PicItem")
                         .offset(x: 30, y: -210)
                 }
-                Spacer()
-            }
+ //               .offset(y: 50)
+//                Spacer()
+                RouletteViewControllerRepresentable()
+
         }
         }
     }
