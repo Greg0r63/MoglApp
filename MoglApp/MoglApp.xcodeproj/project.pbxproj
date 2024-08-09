@@ -10,6 +10,9 @@
 		7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */; };
 		7538E08F2C611E6B00EB3162 /* GuessTheFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E08E2C611E6B00EB3162 /* GuessTheFlagView.swift */; };
 		7538E0942C611F7400EB3162 /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E0932C611F7400EB3162 /* LinearGradientView.swift */; };
+		75F244E72C660AEB00B4EBAE /* AnecdoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F244E62C660AEB00B4EBAE /* AnecdoteViewController.swift */; };
+		75F244E92C660B7D00B4EBAE /* FinishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F244E82C660B7D00B4EBAE /* FinishButtonView.swift */; };
+		75F244EB2C660C0400B4EBAE /* AnecdoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F244EA2C660C0400B4EBAE /* AnecdoteView.swift */; };
 		8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */; };
 		8E8572E62C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */; };
 		8E8572E82C63B50F00756AC9 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */; };
@@ -67,6 +70,9 @@
 		7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrapeauxViewModel.swift; sourceTree = "<group>"; };
 		7538E08E2C611E6B00EB3162 /* GuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagView.swift; sourceTree = "<group>"; };
 		7538E0932C611F7400EB3162 /* LinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
+		75F244E62C660AEB00B4EBAE /* AnecdoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnecdoteViewController.swift; sourceTree = "<group>"; };
+		75F244E82C660B7D00B4EBAE /* FinishButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishButtonView.swift; sourceTree = "<group>"; };
+		75F244EA2C660C0400B4EBAE /* AnecdoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnecdoteView.swift; sourceTree = "<group>"; };
 		8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewModel.swift; sourceTree = "<group>"; };
 		8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesEtAvisStoryboard.storyboard; sourceTree = "<group>"; };
 		8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +144,9 @@
 			children = (
 				7538E08E2C611E6B00EB3162 /* GuessTheFlagView.swift */,
 				7538E0932C611F7400EB3162 /* LinearGradientView.swift */,
+				75F244E62C660AEB00B4EBAE /* AnecdoteViewController.swift */,
+				75F244EA2C660C0400B4EBAE /* AnecdoteView.swift */,
+				75F244E82C660B7D00B4EBAE /* FinishButtonView.swift */,
 			);
 			path = GuessTheFlagView;
 			sourceTree = "<group>";
@@ -395,6 +404,7 @@
 				EAAF0DDB2C5D272500302F03 /* CustomSegmentedButton.swift in Sources */,
 				EAFDF73C2C5BD46900D9782F /* CategorieItem.swift in Sources */,
 				EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */,
+				75F244E92C660B7D00B4EBAE /* FinishButtonView.swift in Sources */,
 				EAFDF74C2C5BD56600D9782F /* NotesEtAvisView.swift in Sources */,
 				EA65D4B12C61751C00BA76C0 /* ModSelectionView.swift in Sources */,
 				EAFDF7032C5BD13E00D9782F /* MoglAppApp.swift in Sources */,
@@ -408,6 +418,7 @@
 				EA65D4982C60C33F00BA76C0 /* CustomColors.swift in Sources */,
 				EA3B8F812C63BF520026C012 /* RouletteViewModel.swift in Sources */,
 				EAFDF74A2C5BD56600D9782F /* HistoriqueView.swift in Sources */,
+				75F244EB2C660C0400B4EBAE /* AnecdoteView.swift in Sources */,
 				EAFDF7502C5BD56600D9782F /* ListeView.swift in Sources */,
 				EAFDF7542C5BD60700D9782F /* HistoriqueViewModels.swift in Sources */,
 				EAFDF74F2C5BD56600D9782F /* TabBarControllerView.swift in Sources */,
@@ -417,6 +428,7 @@
 				7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */,
 				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,
+				75F244E72C660AEB00B4EBAE /* AnecdoteViewController.swift in Sources */,
 				8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */,
 				8EACA4022C60F59200BA7E28 /* CustomColors.swift in Sources */,
 				7538E0942C611F7400EB3162 /* LinearGradientView.swift in Sources */,
