@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */; };
+		7538E08D2C6111E500EB3162 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E08C2C6111E500EB3162 /* CountryViewModel.swift */; };
 		7538E08F2C611E6B00EB3162 /* GuessTheFlagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E08E2C611E6B00EB3162 /* GuessTheFlagView.swift */; };
 		7538E0942C611F7400EB3162 /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E0932C611F7400EB3162 /* LinearGradientView.swift */; };
 		75F244E72C660AEB00B4EBAE /* AnecdoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F244E62C660AEB00B4EBAE /* AnecdoteViewController.swift */; };
@@ -37,7 +37,7 @@
 		EAFDF73C2C5BD46900D9782F /* CategorieItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7332C5BD46900D9782F /* CategorieItem.swift */; };
 		EAFDF73D2C5BD46900D9782F /* JoueurItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7342C5BD46900D9782F /* JoueurItem.swift */; };
 		EAFDF73E2C5BD46900D9782F /* ActiviteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7352C5BD46900D9782F /* ActiviteItem.swift */; };
-		EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7362C5BD46900D9782F /* DrapeauxItem.swift */; };
+		EAFDF73F2C5BD46900D9782F /* CountryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7362C5BD46900D9782F /* CountryItem.swift */; };
 		EAFDF7402C5BD46900D9782F /* MorpionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7372C5BD46900D9782F /* MorpionItem.swift */; };
 		EAFDF7412C5BD46900D9782F /* AvisSuggestionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7382C5BD46900D9782F /* AvisSuggestionItem.swift */; };
 		EAFDF7422C5BD46900D9782F /* HistoriqueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFDF7392C5BD46900D9782F /* HistoriqueItem.swift */; };
@@ -69,8 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrapeauxViewModel.swift; sourceTree = "<group>"; };
-		7538E08E2C611E6B00EB3162 /* GuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagView.swift; sourceTree = "<group>"; };
+		7538E08C2C6111E500EB3162 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		7538E08E2C611E6B00EB3162 /* GuessTheFlagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagView.swift; sourceTree = "<group>"; tabWidth = 4; };
 		7538E0932C611F7400EB3162 /* LinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
 		75F244E62C660AEB00B4EBAE /* AnecdoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnecdoteViewController.swift; sourceTree = "<group>"; };
 		75F244E82C660B7D00B4EBAE /* FinishButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishButtonView.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		EAFDF7332C5BD46900D9782F /* CategorieItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorieItem.swift; sourceTree = "<group>"; };
 		EAFDF7342C5BD46900D9782F /* JoueurItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoueurItem.swift; sourceTree = "<group>"; };
 		EAFDF7352C5BD46900D9782F /* ActiviteItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiviteItem.swift; sourceTree = "<group>"; };
-		EAFDF7362C5BD46900D9782F /* DrapeauxItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrapeauxItem.swift; sourceTree = "<group>"; };
+		EAFDF7362C5BD46900D9782F /* CountryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryItem.swift; sourceTree = "<group>"; };
 		EAFDF7372C5BD46900D9782F /* MorpionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorpionItem.swift; sourceTree = "<group>"; };
 		EAFDF7382C5BD46900D9782F /* AvisSuggestionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvisSuggestionItem.swift; sourceTree = "<group>"; };
 		EAFDF7392C5BD46900D9782F /* HistoriqueItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoriqueItem.swift; sourceTree = "<group>"; };
@@ -228,9 +228,9 @@
 				EAFDF7322C5BD46900D9782F /* AccesibiliteItem.swift */,
 				EAFDF7352C5BD46900D9782F /* ActiviteItem.swift */,
 				EAFDF7382C5BD46900D9782F /* AvisSuggestionItem.swift */,
+				EAFDF7362C5BD46900D9782F /* CountryItem.swift */,
 				EAFDF7332C5BD46900D9782F /* CategorieItem.swift */,
 				EAFDF7312C5BD46900D9782F /* Chifoumi.Item.swift */,
-				EAFDF7362C5BD46900D9782F /* DrapeauxItem.swift */,
 				EAFDF7392C5BD46900D9782F /* HistoriqueItem.swift */,
 				EAFDF7342C5BD46900D9782F /* JoueurItem.swift */,
 				EAFDF7372C5BD46900D9782F /* MorpionItem.swift */,
@@ -267,7 +267,7 @@
 				EA3B8F802C63BF520026C012 /* RouletteViewModel.swift */,
 				EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */,
 				8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */,
-				7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */,
+				7538E08C2C6111E500EB3162 /* CountryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -430,8 +430,8 @@
 				EAFDF7422C5BD46900D9782F /* HistoriqueItem.swift in Sources */,
 				EAFDF73B2C5BD46900D9782F /* AccesibiliteItem.swift in Sources */,
 				EA95B2262C6552C700A2DC77 /* SplashView.swift in Sources */,
-				7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */,
-				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
+				7538E08D2C6111E500EB3162 /* CountryViewModel.swift in Sources */,
+				EAFDF73F2C5BD46900D9782F /* CountryItem.swift in Sources */,
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,
 				75F244E72C660AEB00B4EBAE /* AnecdoteViewController.swift in Sources */,
 				8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */,

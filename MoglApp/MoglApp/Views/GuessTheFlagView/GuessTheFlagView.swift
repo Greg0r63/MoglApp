@@ -8,20 +8,24 @@
 import SwiftUI
 
 struct GuessTheFlagView: View {
-    @StateObject private var viewModel = DrapeauxViewModel()
+    @StateObject private var viewModel = CountryViewModel()
+    
     
     var body: some View {
         ZStack {
             LinearGradientView()
             
+           
             VStack(spacing: 25) {
                 VStack {
+                    
                     Text("Appuie sur le drapeau du pays suivant:")
+                        
                         .font(.title)
                         .foregroundColor(Color.black)
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.white)
-                    Text(viewModel.drapeaux[viewModel.correctAnswer].name)
+                    Text(viewModel.country[viewModel.correctAnswer].name)
                         .font(.largeTitle)
                         .fontWeight(.heavy)
                         .foregroundColor(Color("MOGLButton"))
@@ -30,20 +34,20 @@ struct GuessTheFlagView: View {
                     
                 }
                 
-                ForEach(0..<3) { number in
+               ForEach(0..<3) { number in
                     Button(action: {
                         viewModel.flagChoosed(number)
                     }) {
-                        Image(viewModel.drapeaux[number].nomDeDrapeau)
-                            .clipShape(.rect(cornerRadius: 12))
-                            .shadow(radius: 4)
-                            
-                            
-                            
-                            
+                        Text(viewModel.country[number].flag)
+                            .font(.system(size: 100))
+                            .padding(.bottom)
                     }
                     
                 }
+                
+
+                
+
                 
                 Spacer()
             }
