@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct TabBarControllerView: UIViewControllerRepresentable { // Structure qui doit conformer au protocole UIViewCotrollerRepresentable pour pouvoir créer une vue SwiftUI avec du code UIKit
+struct TabBarControllerView: UIViewControllerRepresentable {
     
-    func makeUIViewController(context: Context) -> some UIViewController { // 1ère méthode pour conformer au protocole
+    func makeUIViewController(context: Context) -> some UIViewController { 
         let tabBarController = UITabBarController()
                 
                 let viewController1 = UIHostingController(rootView: ModSelectionView())
