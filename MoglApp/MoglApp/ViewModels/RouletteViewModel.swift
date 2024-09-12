@@ -26,12 +26,34 @@ class RouletteViewModel: ObservableObject {
             Categorie(nom: "Jeux", couleur: .moglViolet, proportion: 1 / 12)
         ]
     }
+    
+    /**
+     Fonction pour définir de manière semi aléatoire l'amplitude de rotation de la roulette.
+     Elle doit faire au minimum 3 tours et au maximum 4 tours.
+     - Returns : Un nombre entier de segments de la roulette à faire défiler
+     */
     func pickNumber() -> Int {
         return Int.random(in: (categorie.count * 3)...(categorie.count * 4))
     }
+    
+    /**
+     Fonction pour définir la valeur du segment sur lequel la roulette va s'arrêter.
+     Elle prend en compte la valeur du segment sur lequel la roulette était précédemmant arrêtée et y ajoute la nouvelle valeur sélectionnée.
+     - Parameters :
+     - resultat : Valeur actuelle du segment
+     - numeroChoisi : Nouvelle valeur à incrémenter
+     - Returns : Un nombre entier qui va définir une catégorie
+     */
     func calculResultat(resultat: Int, numeroChoisi: Int) -> Int {
         return Int((resultat + numeroChoisi)) % 6
     }
+    
+    /**
+     Fonction pour définir la couleur associée au résultat.
+     - Parameters :
+     - resultat : Valeur actuelle du segment
+     - Returns : La couleur associée au résultat
+     */
     func calculCouleur(resultat: Int) -> Color {
         switch resultat {
         case 1 :
