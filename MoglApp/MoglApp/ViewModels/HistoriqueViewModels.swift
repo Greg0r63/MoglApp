@@ -9,13 +9,18 @@ import SwiftUI
 
 class HistoriqueViewModel {
     static let shared = HistoriqueViewModel()
+    @Published var items: [Historique]
     
-    var items: [Historique]
+    init(items: [Historique] = []) {
+        self.items = items
+    }
+
+    func ajouterHistorique(gameName: String, datePlayed: Date, joueurs: [Joueur]) {
+        let item = Historique(gameName: gameName, datePlayed: datePlayed, joueurs: joueurs)
+        items.append(item)
+    }
     
-    init() {
-        self.items = [
-            Historique(gameName: "Jeu 1", datePlayed: Date(), joueurs: [Joueur(nom: "Massi", couleur: .green, aJoue: true)]),
-            Historique(gameName: "Jeu 2", datePlayed: Date(), joueurs: [])
-        ]
+    func noHistoriqueMessage() -> String? {
+        return items.isEmpty ? "Aucun jeu n'a encore été joué." : nil
     }
 }
