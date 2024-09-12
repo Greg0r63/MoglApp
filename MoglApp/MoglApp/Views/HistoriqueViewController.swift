@@ -23,10 +23,10 @@ class HistoriqueViewController: UIViewController, UITableViewDelegate, UITableVi
                 view.addSubview(backgroundImage)
                 view.sendSubviewToBack(backgroundImage)
                 
-                // Désactiver les auto-constraints par défaut
+                // Désactive les contraintes par défaut
                 backgroundImage.translatesAutoresizingMaskIntoConstraints = false
                 
-                // Ajouter des contraintes pour ignorer les safe areas
+                // Ajoute des contraintes pour ignorer les safe areas
                 NSLayoutConstraint.activate([
                     backgroundImage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
                     backgroundImage.trailingAnchor.constraint(equalTo: view.trailingAnchor),
