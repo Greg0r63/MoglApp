@@ -19,7 +19,7 @@ struct ListeView: View {
             ZStack {
                 LazyVGrid(columns: columns) {
                     ForEach(categorieViewModel.categorie.prefix(6)) { categorie in
-                        NavigationLink(destination: ConfigurationView()) {
+                        NavigationLink(destination: destinationView(for: categorie)) {
                             RoundedRectangle(cornerRadius: 20)
                                 .fill(categorie.couleur)
                                 .frame(width: 150, height: 150)
@@ -38,6 +38,20 @@ struct ListeView: View {
             }
         }
     }
+    
+    @ViewBuilder
+    func destinationView(for categorie: Categorie) -> some View {
+            switch categorie.nom {
+            case "Anecdote":
+                AnecdoteSwiftUIView()
+            case "Jeux de mots":
+                EmptyView()
+            case "Catégorie 3":
+                EmptyView()
+            default:
+                EmptyView()
+            }
+        }
 }
 
 #Preview {

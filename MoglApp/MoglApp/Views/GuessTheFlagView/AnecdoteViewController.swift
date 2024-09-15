@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 
 extension UIColor {
@@ -54,8 +55,17 @@ extension UIColor {
 
 class AnecdoteViewController: UIViewController {
     
+    var viewModel = AnecdotesViewModel()
+    var cancellables = Set<AnyCancellable>()
+    
+    let questionLabel = UILabel()
+    let emojiLabel = UILabel()
+    let refreshButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewModel.fetchAnecdotes()
         
         // Titre "Anecdote"
         let titleLabel = UILabel()
@@ -65,8 +75,7 @@ class AnecdoteViewController: UIViewController {
         view.addSubview(titleLabel)
         
         // Question "Quelle est ta plus grande fierté ?"
-        let questionLabel = UILabel()
-        questionLabel.text = "Quelle est ta plus grande fierté ?"
+
         questionLabel.font = UIFont(name: "Times New Roman", size: 40)
         questionLabel.numberOfLines = 0
         questionLabel.textAlignment = .center
@@ -74,11 +83,26 @@ class AnecdoteViewController: UIViewController {
         view.addSubview(questionLabel)
         
         // Emoji 💪
-        let emojiLabel = UILabel()
-        emojiLabel.text = "💪"
+        
         emojiLabel.font = UIFont.systemFont(ofSize: 48)
         emojiLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(emojiLabel)
+        
+        refreshButton.setTitle("Nouvelle annecdote", for: .normal)
+        refreshButton.setTitleColor(.blue, for: .normal)
+        refreshButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        refreshButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(refreshButton)
+        
+        viewModel.$anecdotes.sink { [weak self] anecdotes in
+                    if let randomAnecdote = anecdotes.randomElement() {
+                        DispatchQueue.main.async {
+                            self?.questionLabel.text = randomAnecdote.consigne
+                            self?.emojiLabel.text = randomAnecdote.emoji
+                        }
+                    }
+                }.store(in: &cancellables)
+        
         
         // Bouton "Terminer"
        /* let finishButton = UIButton(type: .system)
@@ -107,6 +131,9 @@ class AnecdoteViewController: UIViewController {
             emojiLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             emojiLabel.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 60),
             
+            refreshButton.topAnchor.constraint(equalTo: emojiLabel.bottomAnchor, constant: 70),
+            refreshButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            
          /*   finishButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             finishButton.topAnchor.constraint(equalTo: emojiLabel.bottomAnchor, constant: 60)
           */
@@ -114,6 +141,20 @@ class AnecdoteViewController: UIViewController {
         
  
     }
+    
+    @objc func didTapButton() {
+            displayRandomAnecdote()
+        }
+    
+    func displayRandomAnecdote() {
+            if let randomAnecdote = viewModel.getRandomAnecdote() {
+                questionLabel.text = randomAnecdote.consigne
+                emojiLabel.text = randomAnecdote.emoji
+            } else {
+                questionLabel.text = "Désolé, il n'y a que trois annecdotes pour l'instant"
+                emojiLabel.text = ""
+            }
+        }
     
 }
 
