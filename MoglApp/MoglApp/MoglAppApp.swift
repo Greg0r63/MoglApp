@@ -26,7 +26,6 @@ struct MoglAppApp: App {
     var body: some Scene {
         WindowGroup {
             GuessTheFlagView()
-              //  .ignoresSafeArea(edges: .top)
         }
         .modelContainer(sharedModelContainer)
     }

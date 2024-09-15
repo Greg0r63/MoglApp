@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FlagFromAPIView: View {
+struct GuessTheFlagView: View {
     @StateObject private var viewModel = CountryViewModel()
     var body: some View {
         ZStack {
@@ -70,5 +70,5 @@ struct FlagFromAPIView: View {
 
 
 #Preview {
-    FlagFromAPIView()
+    GuessTheFlagView()
 }
