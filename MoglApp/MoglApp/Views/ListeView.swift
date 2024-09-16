@@ -48,6 +48,8 @@ struct ListeView: View {
                 EmptyView()
             case "Catégorie 3":
                 EmptyView()
+            case "Jeux" :
+                GuessTheCapitaIView()
             default:
                 EmptyView()
             }
