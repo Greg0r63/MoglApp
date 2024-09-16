@@ -59,13 +59,19 @@ class CountryViewModel: ObservableObject {
         
     }
     
+    protocol Answer {
+        func answerChoosed()
+        func nextRound()
+    }
+    
+    
     
       func flagChoosed(_ number: Int) {
           if number == correctAnswer {
               answerChoosed = "Bonne réponse 🥳"
               score += 1
           } else {
-              answerChoosed = "Mauvaise réponse 🫨"
+              answerChoosed = "Mauvaise réponse 🫨 C'était le drapeau de: \(country[correctAnswer].flag)"
           }
           showingScore = true
       }
@@ -80,14 +86,32 @@ class CountryViewModel: ObservableObject {
           }
       }
       
+    func capitalChoosed(_ number: Int) {
+        if number == correctAnswer {
+            answerChoosed = "Bonne réponse 🥳"
+            score += 1
+        } else {
+            answerChoosed = "Mauvaise réponse 🫨 C'était \(country[correctAnswer].capital)"
+        }
+        showingScore = true
+    }
       
       func nextCapitalChoosed() {
-          if numberOfRounds <= 6 {
+          if numberOfRounds <= 2 {
               country.shuffle()
               numberOfRounds += 1
           } else {
+              print("stop")
               showingFinalScore = true
           }
       }
     
+    
+    // TEST EN SOLID
+    
+
 }
+
+
+
+

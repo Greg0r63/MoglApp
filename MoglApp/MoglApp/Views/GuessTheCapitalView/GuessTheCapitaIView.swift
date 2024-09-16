@@ -49,7 +49,7 @@ struct GuessTheCapitaIView: View {
                 if viewModel.country.count >= 3 {
                     ForEach(0..<3) { number in
                         Button(action: {
-                            viewModel.flagChoosed(number)
+                            viewModel.capitalChoosed(number)
                         }) {
                             ZStack {
                             Color.moglBackgroundBottom
