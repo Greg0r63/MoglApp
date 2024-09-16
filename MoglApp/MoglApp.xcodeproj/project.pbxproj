@@ -19,6 +19,8 @@
 		8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */; };
 		8E8572E62C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */; };
 		8E8572E82C63B50F00756AC9 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */; };
+		8E8EAC192C9820770054B733 /* EmojiItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EAC182C9820770054B733 /* EmojiItem.swift */; };
+		8E8EAC1B2C98222F0054B733 /* EmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EAC1A2C98222F0054B733 /* EmojiViewModel.swift */; };
 		8EACA4022C60F59200BA7E28 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACA4012C60F59200BA7E28 /* CustomColors.swift */; };
 		EA37A7002C9448D90049592C /* Anecdote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA37A6FF2C9448D90049592C /* Anecdote.swift */; };
 		EA37A7022C9448EF0049592C /* AnecdotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA37A7012C9448EF0049592C /* AnecdotesViewModel.swift */; };
@@ -87,6 +89,8 @@
 		8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewModel.swift; sourceTree = "<group>"; };
 		8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesEtAvisStoryboard.storyboard; sourceTree = "<group>"; };
 		8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisViewController.swift; sourceTree = "<group>"; };
+		8E8EAC182C9820770054B733 /* EmojiItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiItem.swift; sourceTree = "<group>"; };
+		8E8EAC1A2C98222F0054B733 /* EmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewModel.swift; sourceTree = "<group>"; };
 		8EACA4012C60F59200BA7E28 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		EA37A6FF2C9448D90049592C /* Anecdote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anecdote.swift; sourceTree = "<group>"; };
 		EA37A7012C9448EF0049592C /* AnecdotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnecdotesViewModel.swift; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 				EAFDF7312C5BD46900D9782F /* Chifoumi.Item.swift */,
 				EAFDF7392C5BD46900D9782F /* HistoriqueItem.swift */,
 				EAFDF7342C5BD46900D9782F /* JoueurItem.swift */,
+				8E8EAC182C9820770054B733 /* EmojiItem.swift */,
 				EAFDF7372C5BD46900D9782F /* MorpionItem.swift */,
 				EA37A6FF2C9448D90049592C /* Anecdote.swift */,
 				EAFF05F12C624F5E00C535D1 /* UIGradientColor.swift */,
@@ -304,6 +309,7 @@
 				7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */,
 				EA37A7012C9448EF0049592C /* AnecdotesViewModel.swift */,
 				7538E08C2C6111E500EB3162 /* CountryViewModel.swift */,
+				8E8EAC1A2C98222F0054B733 /* EmojiViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -467,8 +473,10 @@
 				EAAF0DD92C5D22EC00302F03 /* BoutonRouletteView.swift in Sources */,
 				EAFDF7422C5BD46900D9782F /* HistoriqueItem.swift in Sources */,
 				EAFDF73B2C5BD46900D9782F /* AccesibiliteItem.swift in Sources */,
+				8E8EAC192C9820770054B733 /* EmojiItem.swift in Sources */,
 				EA95B2262C6552C700A2DC77 /* SplashView.swift in Sources */,
 				EA37A7002C9448D90049592C /* Anecdote.swift in Sources */,
+				8E8EAC1B2C98222F0054B733 /* EmojiViewModel.swift in Sources */,
 				7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */,
 				EA31F8F72C9444880063085B /* LancerRouletteItem.swift in Sources */,
 				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
