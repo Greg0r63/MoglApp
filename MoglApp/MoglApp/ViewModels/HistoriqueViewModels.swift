@@ -14,7 +14,7 @@ class HistoriqueViewModel {
     init(items: [Historique] = []) {
         self.items = items
     }
-
+    
     func ajouterHistorique(gameName: String, datePlayed: Date, joueurs: [Joueur]) {
         let item = Historique(gameName: gameName, datePlayed: datePlayed, joueurs: joueurs)
         items.append(item)
@@ -22,13 +22,5 @@ class HistoriqueViewModel {
     
     func noHistoriqueMessage() -> String? {
         return items.isEmpty ? "Aucun jeu n'a encore été joué." : nil
-    
-    var items: [Historique]
-    
-    init() {
-        self.items = [
-            Historique(gameName: "Jeu 1", datePlayed: Date(), joueurs: [Joueur(id: UUID().uuidString, nom: "Massi", emoji: "🐼", aJoue: true)]),
-            Historique(gameName: "Jeu 2", datePlayed: Date(), joueurs: [])
-        ]
     }
 }
