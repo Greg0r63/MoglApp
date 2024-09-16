@@ -22,13 +22,5 @@ class HistoriqueViewModel {
     
     func noHistoriqueMessage() -> String? {
         return items.isEmpty ? "Aucun jeu n'a encore été joué." : nil
-    
-    var items: [Historique]
-    
-    init() {
-        self.items = [
-            Historique(gameName: "Jeu 1", datePlayed: Date(), joueurs: [Joueur(id: UUID().uuidString, nom: "Massi", emoji: "🐼", aJoue: true)]),
-            Historique(gameName: "Jeu 2", datePlayed: Date(), joueurs: [])
-        ]
     }
 }
