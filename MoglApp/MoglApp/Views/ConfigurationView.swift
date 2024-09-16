@@ -17,7 +17,8 @@ import SwiftUI
 struct ConfigurationView: View {
     /// Le ViewModel qui gère l'état de la vue `ConfigurationView`.
     @StateObject private var viewModel = ConfigurationViewModel()
-
+    @ObservedObject private var emojiViewModel = EmojiViewModel()
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -45,8 +46,24 @@ struct ConfigurationView: View {
                             .autocapitalization(.words)
                             .disableAutocorrection(true)
                         
-                        Button(action: {
-                            viewModel.addJoueur()
+                         Button(action: {
+                             viewModel.addJoueur(emojiViewModel: emojiViewModel)  // Appelle la méthode ici
+                         }) {
+                             Text("Ajouter")
+                                 .font(.title3)
+                                 .fontWeight(.medium)
+                                 .multilineTextAlignment(.center)
+                                 .padding()
+                                 .background(Color("ColorTabBarItem").opacity(0.24))
+                                 .foregroundColor(Color("ColorTabBarItem"))
+                                 .cornerRadius(8)
+                         }
+                         .padding(.trailing, 16.0)
+
+                         
+                      /*  Button(action: {
+                            emojiViewModel.emojis
+                          //  viewModel.addJoueur()
                         }) {
                             Text("Ajouter")
                                 .font(.title3)
@@ -57,12 +74,12 @@ struct ConfigurationView: View {
                                 .foregroundColor(Color("ColorTabBarItem"))
                                 .cornerRadius(8)
                         }
-                        .padding(.trailing, 16.0)
+                        .padding(.trailing, 16.0) */
                     }
                     
                     ScrollView {
                         VStack(alignment: .leading) {
-                            ForEach(viewModel.joueurs) { joueur in
+                         /*   ForEach(viewModel.joueurs) { joueur in
                                 HStack {
                                     Circle()
                                         .fill(joueur.couleur)
@@ -74,6 +91,20 @@ struct ConfigurationView: View {
                                 }
                                 .padding(.vertical, 4)
                             }
+                            */
+                             ForEach(viewModel.joueurs) { joueur in
+                                 HStack {
+                                     Text(joueur.emoji)
+                                         .font(.largeTitle)
+                                     
+                                     Text(joueur.nom)
+                                         .padding(.leading, 8)
+                                         .font(.title3)
+                                 }
+                                 .padding(.vertical, 4)
+                             }
+
+                             
                         }
                     }
                     .padding(.top, 20)
@@ -94,6 +125,10 @@ struct ConfigurationView: View {
                 .padding(.horizontal, 16)
                 .navigationBarHidden(true)
             }
+            .onAppear {
+                emojiViewModel.fetchEmojis()
+            }
+
         }
     }
 }

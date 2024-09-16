@@ -14,11 +14,11 @@ import SwiftUI
  Cette classe représente les attributs associés à chaque joueur, tels que son nom, sa couleur, et si le joueur a déjà joué ou non.
  */
 class Joueur: Identifiable {
-    var id : UUID = UUID()
+    var id : String
     /// Nom du joueur.
     var nom: String
     /// Couleur aléatoire attribuée au joueur.
-    var couleur: Color
+    var emoji: String
     /// Indique si le joueur a déjà joué ou non.
     var aJoue: Bool
     
@@ -30,10 +30,11 @@ class Joueur: Identifiable {
        - couleur: Couleur aléatoire attribuée au joueur.
        - aJoue: Indique si le joueur a déjà joué ou non.
      */
-    init(id: UUID = UUID(), nom: String, couleur: Color, aJoue: Bool) {
+    init(id: String, nom: String, emoji: String, aJoue: Bool) {
         self.id = id
         self.nom = nom
-        self.couleur = couleur
+        self.emoji = emoji
         self.aJoue = aJoue
     }
 }
+

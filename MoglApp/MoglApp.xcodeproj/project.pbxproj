@@ -16,6 +16,8 @@
 		8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */; };
 		8E8572E62C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */; };
 		8E8572E82C63B50F00756AC9 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */; };
+		8E8EAC192C9820770054B733 /* EmojiItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EAC182C9820770054B733 /* EmojiItem.swift */; };
+		8E8EAC1B2C98222F0054B733 /* EmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8EAC1A2C98222F0054B733 /* EmojiViewModel.swift */; };
 		8EACA4022C60F59200BA7E28 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACA4012C60F59200BA7E28 /* CustomColors.swift */; };
 		EA3B8F812C63BF520026C012 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B8F802C63BF520026C012 /* RouletteViewModel.swift */; };
 		EA65D4B12C61751C00BA76C0 /* ModSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4B02C61751C00BA76C0 /* ModSelectionView.swift */; };
@@ -78,6 +80,8 @@
 		8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewModel.swift; sourceTree = "<group>"; };
 		8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesEtAvisStoryboard.storyboard; sourceTree = "<group>"; };
 		8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisViewController.swift; sourceTree = "<group>"; };
+		8E8EAC182C9820770054B733 /* EmojiItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiItem.swift; sourceTree = "<group>"; };
+		8E8EAC1A2C98222F0054B733 /* EmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewModel.swift; sourceTree = "<group>"; };
 		8EACA4012C60F59200BA7E28 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		EA3B8F802C63BF520026C012 /* RouletteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
 		EA65D4B02C61751C00BA76C0 /* ModSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModSelectionView.swift; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 				EAFDF7362C5BD46900D9782F /* DrapeauxItem.swift */,
 				EAFDF7392C5BD46900D9782F /* HistoriqueItem.swift */,
 				EAFDF7342C5BD46900D9782F /* JoueurItem.swift */,
+				8E8EAC182C9820770054B733 /* EmojiItem.swift */,
 				EAFDF7372C5BD46900D9782F /* MorpionItem.swift */,
 				EAFF05F12C624F5E00C535D1 /* UIGradientColor.swift */,
 			);
@@ -268,6 +273,7 @@
 				EAFDF7522C5BD60700D9782F /* HistoriqueViewModels.swift */,
 				8E8572E02C63834E00756AC9 /* ConfigurationViewModel.swift */,
 				7538E08C2C6111E500EB3162 /* DrapeauxViewModel.swift */,
+				8E8EAC1A2C98222F0054B733 /* EmojiViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -429,7 +435,9 @@
 				EAAF0DD92C5D22EC00302F03 /* BoutonRouletteView.swift in Sources */,
 				EAFDF7422C5BD46900D9782F /* HistoriqueItem.swift in Sources */,
 				EAFDF73B2C5BD46900D9782F /* AccesibiliteItem.swift in Sources */,
+				8E8EAC192C9820770054B733 /* EmojiItem.swift in Sources */,
 				EA95B2262C6552C700A2DC77 /* SplashView.swift in Sources */,
+				8E8EAC1B2C98222F0054B733 /* EmojiViewModel.swift in Sources */,
 				7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */,
 				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,

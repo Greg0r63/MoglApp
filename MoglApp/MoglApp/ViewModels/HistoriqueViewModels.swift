@@ -14,7 +14,7 @@ class HistoriqueViewModel {
     
     init() {
         self.items = [
-            Historique(gameName: "Jeu 1", datePlayed: Date(), joueurs: [Joueur(nom: "Massi", couleur: .green, aJoue: true)]),
+            Historique(gameName: "Jeu 1", datePlayed: Date(), joueurs: [Joueur(id: UUID().uuidString, nom: "Massi", emoji: "🐼", aJoue: true)]),
             Historique(gameName: "Jeu 2", datePlayed: Date(), joueurs: [])
         ]
     }
