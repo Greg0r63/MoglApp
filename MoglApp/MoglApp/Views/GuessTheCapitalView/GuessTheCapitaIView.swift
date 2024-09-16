@@ -84,7 +84,7 @@ struct GuessTheCapitaIView: View {
             }
             
        .alert(viewModel.answerChoosed, isPresented: $viewModel.showingScore) {
-          Button("Continuer", role: .none, action: viewModel.nextFlagChoosed)
+          Button("Continuer", role: .none, action: viewModel.nextCapitalChoosed)
        } message: {
           Text("Ton score est de \(viewModel.score)")
        }

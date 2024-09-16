@@ -17,6 +17,7 @@ class CountryViewModel: ObservableObject {
     @Published var numberOfRounds = 0
     @Published var showingFinalScore = false
     @Published var wrongAnswer = ""
+    @Published var maxOfRound = 1
     @Published var selectedContinent: String = "All"
     
     var continents: [String] = [
@@ -25,7 +26,7 @@ class CountryViewModel: ObservableObject {
     var drapeaux = ["🇪🇺","🇺🇳", "🇵🇸","🇫🇷"]
     
     
-    private let baseURL = "http://localhost:3000/country"
+    private let baseURL = "http://10.80.55.116:3000/country"
 
     func fetchCountries(for continent: String = "All") {
         var urlSelectedContinent = baseURL
@@ -58,14 +59,7 @@ class CountryViewModel: ObservableObject {
         }.resume()
         
     }
-    
-    protocol Answer {
-        func answerChoosed()
-        func nextRound()
-    }
-    
-    
-    
+
       func flagChoosed(_ number: Int) {
           if number == correctAnswer {
               answerChoosed = "Bonne réponse 🥳"
@@ -75,14 +69,15 @@ class CountryViewModel: ObservableObject {
           }
           showingScore = true
       }
-      
+    
       func nextFlagChoosed() {
-          if numberOfRounds <= 4 {
+          if numberOfRounds < 4 {
               country.shuffle()
               correctAnswer = Int.random(in: 0...2)
               numberOfRounds += 1
           } else {
-              print("stop")
+              showingFinalScore = true
+              print("Jeu terminé")
           }
       }
       
@@ -97,12 +92,13 @@ class CountryViewModel: ObservableObject {
     }
       
       func nextCapitalChoosed() {
-          if numberOfRounds <= 2 {
+          if numberOfRounds < 4 {
               country.shuffle()
+              correctAnswer = Int.random(in: 0...2)
               numberOfRounds += 1
           } else {
+             showingFinalScore = true
               print("stop")
-              showingFinalScore = true
           }
       }
     
