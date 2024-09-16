@@ -53,6 +53,8 @@ struct ListeView: View {
                     .padding()
                 }
             }
+        }.onAppear {
+            categorieViewModel.fetchCat()
         }
     }
 }

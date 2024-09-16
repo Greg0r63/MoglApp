@@ -17,6 +17,8 @@
 		8E8572E62C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */; };
 		8E8572E82C63B50F00756AC9 /* NotesEtAvisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */; };
 		8EACA4022C60F59200BA7E28 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EACA4012C60F59200BA7E28 /* CustomColors.swift */; };
+		EA31F8F72C9444880063085B /* LancerRouletteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA31F8F62C9444880063085B /* LancerRouletteItem.swift */; };
+		EA31F8F92C9817F00063085B /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA31F8F82C9817F00063085B /* ViewCoordinator.swift */; };
 		EA3B8F812C63BF520026C012 /* RouletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B8F802C63BF520026C012 /* RouletteViewModel.swift */; };
 		EA65D4B12C61751C00BA76C0 /* ModSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65D4B02C61751C00BA76C0 /* ModSelectionView.swift */; };
 		EA8FC74E2C651A7900E23B1F /* HistoriqueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8FC74D2C651A7900E23B1F /* HistoriqueViewController.swift */; };
@@ -79,6 +81,8 @@
 		8E8572E32C63B50F00756AC9 /* NotesEtAvisStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NotesEtAvisStoryboard.storyboard; sourceTree = "<group>"; };
 		8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesEtAvisViewController.swift; sourceTree = "<group>"; };
 		8EACA4012C60F59200BA7E28 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		EA31F8F62C9444880063085B /* LancerRouletteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LancerRouletteItem.swift; sourceTree = "<group>"; };
+		EA31F8F82C9817F00063085B /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
 		EA3B8F802C63BF520026C012 /* RouletteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouletteViewModel.swift; sourceTree = "<group>"; };
 		EA65D4B02C61751C00BA76C0 /* ModSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModSelectionView.swift; sourceTree = "<group>"; };
 		EA8FC74D2C651A7900E23B1F /* HistoriqueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriqueViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +239,7 @@
 				EAFDF7342C5BD46900D9782F /* JoueurItem.swift */,
 				EAFDF7372C5BD46900D9782F /* MorpionItem.swift */,
 				EAFF05F12C624F5E00C535D1 /* UIGradientColor.swift */,
+				EA31F8F62C9444880063085B /* LancerRouletteItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				EA95B2252C6552C700A2DC77 /* SplashView.swift */,
 				EAFDF7432C5BD56500D9782F /* HistoriqueView.swift */,
 				EA8FC74D2C651A7900E23B1F /* HistoriqueViewController.swift */,
+				EA31F8F82C9817F00063085B /* ViewCoordinator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -408,6 +414,7 @@
 				EAFDF73C2C5BD46900D9782F /* CategorieItem.swift in Sources */,
 				EAFDF7072C5BD13E00D9782F /* Item.swift in Sources */,
 				75F244E92C660B7D00B4EBAE /* FinishButtonView.swift in Sources */,
+				EA31F8F92C9817F00063085B /* ViewCoordinator.swift in Sources */,
 				EAFDF74C2C5BD56600D9782F /* NotesEtAvisView.swift in Sources */,
 				EA65D4B12C61751C00BA76C0 /* ModSelectionView.swift in Sources */,
 				EA8FC74E2C651A7900E23B1F /* HistoriqueViewController.swift in Sources */,
@@ -431,6 +438,7 @@
 				EAFDF73B2C5BD46900D9782F /* AccesibiliteItem.swift in Sources */,
 				EA95B2262C6552C700A2DC77 /* SplashView.swift in Sources */,
 				7538E08D2C6111E500EB3162 /* DrapeauxViewModel.swift in Sources */,
+				EA31F8F72C9444880063085B /* LancerRouletteItem.swift in Sources */,
 				EAFDF73F2C5BD46900D9782F /* DrapeauxItem.swift in Sources */,
 				EAFDF73A2C5BD46900D9782F /* Chifoumi.Item.swift in Sources */,
 				75F244E72C660AEB00B4EBAE /* AnecdoteViewController.swift in Sources */,

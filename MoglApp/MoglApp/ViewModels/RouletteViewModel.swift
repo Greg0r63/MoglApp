@@ -8,9 +8,17 @@
 import Foundation
 import SwiftUI
 
+/**
+ Documentation de la classe RouletteViewModel.
+ 
+ Cette classe représente la liste des segment avec des initialisateurs spécifiques.
+ Elle peut-être observée pour créer la roulette dans RouletteView.
+ 
+ Utilisez cette classe pour gérer le nombre de segments, la catégorie et la couleur qui leur sont associées, ainsi que l'espace qu'il prendront sur la roulette.
+ */
 class RouletteViewModel: ObservableObject {
     @Published var categorie: [Categorie] = []
-    init() {
+ /*   init() {
         categorie = [
             Categorie(nom: "Anecdote", couleur: .moglRed, proportion: 1 / 12),
             Categorie(nom: "Jeux de mots", couleur: .moglOrange, proportion: 1 / 12),
@@ -25,8 +33,7 @@ class RouletteViewModel: ObservableObject {
             Categorie(nom: "Collaboratif", couleur: .moglBlue, proportion: 1 / 12),
             Categorie(nom: "Jeux", couleur: .moglViolet, proportion: 1 / 12)
         ]
-    }
-    
+    } */
     /**
      Fonction pour définir de manière semi aléatoire l'amplitude de rotation de la roulette.
      Elle doit faire au minimum 3 tours et au maximum 4 tours.
@@ -35,39 +42,29 @@ class RouletteViewModel: ObservableObject {
     func pickNumber() -> Int {
         return Int.random(in: (categorie.count * 3)...(categorie.count * 4))
     }
-    
     /**
-     Fonction pour définir la valeur du segment sur lequel la roulette va s'arrêter.
-     Elle prend en compte la valeur du segment sur lequel la roulette était précédemmant arrêtée et y ajoute la nouvelle valeur sélectionnée.
-     - Parameters :
-     - resultat : Valeur actuelle du segment
-     - numeroChoisi : Nouvelle valeur à incrémenter
-     - Returns : Un nombre entier qui va définir une catégorie
+     Fonction pour récupérer les data du tableau qui se trouve dans le fichier JSON`
      */
-    func calculResultat(resultat: Int, numeroChoisi: Int) -> Int {
-        return Int((resultat + numeroChoisi)) % 6
-    }
-    
-    /**
-     Fonction pour définir la couleur associée au résultat.
-     - Parameters :
-     - resultat : Valeur actuelle du segment
-     - Returns : La couleur associée au résultat
-     */
-    func calculCouleur(resultat: Int) -> Color {
-        switch resultat {
-        case 1 :
-            return .moglViolet
-        case 2 :
-            return .moglBlue
-        case 3 :
-            return .moglGreen
-        case 4 :
-            return .moglYellow
-        case 5:
-            return .moglOrange
-        default :
-            return .moglRed
+    func fetchCat() {
+        guard let url = URL(string: "http://localhost:3000/categorie") else {
+            print("Invalid URL")
+            return
+        }
+
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            if let data = data {
+                do {
+                    let decodedCat = try JSONDecoder().decode([Categorie].self, from: data)
+                    DispatchQueue.main.async {
+                        print ("fetched worked")
+                        self.categorie = decodedCat
+                    }
+                } catch {
+                    print("Error decoding data: \(error)")
+                }
+            } else if let error = error {
+                print("Error fetching data: \(error)")
             }
+        }.resume()
     }
 }
