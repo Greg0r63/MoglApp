@@ -46,7 +46,26 @@ class HistoriqueViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return HistoriqueViewModel.shared.items.count
+        let count = HistoriqueViewModel.shared.items.count
+            
+            if count == 0 {
+                // Si l'historique est vide, afficher un message à la place de la table view
+                let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+                messageLabel.text = HistoriqueViewModel.shared.noHistoriqueMessage()
+                messageLabel.textAlignment = .center
+                messageLabel.textColor = .gray
+                messageLabel.numberOfLines = 0
+                messageLabel.sizeToFit()
+                
+                tableView.backgroundView = messageLabel
+                tableView.separatorStyle = .none
+            } else {
+                // Si l'historique contient des éléments, on affiche la table view normalement
+                tableView.backgroundView = nil
+                tableView.separatorStyle = .singleLine
+            }
+            
+            return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -15,9 +15,9 @@ import SwiftUI
  */
 struct CustomColors {
     /// Constante pour stocker  le ColorSet de la première couleur
-    static let primaryColor = Color("GradientColor1")
+    static let primaryColor = Color("MOGLBackgroundTop")
     /// Constante pour stocker  le ColorsSet de la seconde couleur
-    static let secondaryColor = Color("GradientColor2")
+    static let secondaryColor = Color("MOGLBackgroundBottom")
     /// Création du dégradé en appelant les deux couleurs
     static let gradient = LinearGradient(
         gradient: Gradient(colors: [primaryColor, secondaryColor]),

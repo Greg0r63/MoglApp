@@ -12,25 +12,29 @@ import SwiftUI
  */
 
 struct SplashView: View {
+    @Binding var isActive: Bool
     @State private var scale = 0.7
     var body: some View {
         ZStack {
+            CustomColors.gradient
+                .ignoresSafeArea()
             VStack(spacing: 40){
                 ZStack{
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.moglBackgroundTop)
-                        .frame(width: 230, height: 230)
-                    RoundedRectangle(cornerRadius: 15)
-                        .fill(Color.moglBackgroundBottom)
-                        .frame (width: 210, height: 210)
-                    Image("AppIcon")
+                    Image("LogoMOGL")
                         .resizable()
-                        .frame (width: 200, height: 180)
+                        .scaledToFit()
+                        .scaleEffect(0.5)
+//                        .frame (width: 230, height: 230)
                 }
                 .scaleEffect(scale)
                 .onAppear{
                     withAnimation(.easeIn(duration: 3)) {
-                        self.scale = 0.9
+                        self.scale = 1.2
+                    }
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                        withAnimation {
+                            self.isActive = true
+                        }
                     }
                 }
             }
@@ -38,6 +42,6 @@ struct SplashView: View {
     }
 }
 
-#Preview {
-    SplashView()
-}
+//#Preview {
+//    SplashView()
+//}
