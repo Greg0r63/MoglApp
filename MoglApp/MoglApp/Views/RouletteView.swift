@@ -36,9 +36,9 @@ struct RouletteView: View {
                         withAnimation(.spring(response: 3, dampingFraction: 1)) {
                             numeroChoisi = categorieVM.pickNumber()
                             tourne += 360 / 12 * numeroChoisi
-                            resultat = categorieVM.calculResultat(resultat: resultat, numeroChoisi: numeroChoisi)
+                            resultat = LancerRoulette.calculResultat(resultat: resultat, numeroChoisi: numeroChoisi)
                             print(resultat)
-                            couleurChoisie = categorieVM.calculCouleur(resultat: resultat)
+                            couleurChoisie = LancerRoulette.calculCouleur(resultat: resultat)
                             print(couleurChoisie)
                         }
                     } label: {
@@ -51,7 +51,9 @@ struct RouletteView: View {
 //                Spacer()
                 RouletteViewControllerRepresentable()
 
-        }
+            }.onAppear {
+                categorieVM.fetchCat()
+            }
         }
     }
 struct RouletteViewControllerRepresentable: UIViewControllerRepresentable {

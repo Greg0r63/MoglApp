@@ -36,6 +36,8 @@ struct ListeView: View {
                     .padding()
                 }
             }
+        }.onAppear {
+            categorieViewModel.fetchCat()
         }
     }
     
@@ -48,6 +50,8 @@ struct ListeView: View {
                 EmptyView()
             case "Catégorie 3":
                 EmptyView()
+            case "Jeux" :
+                GuessTheCapitaIView()
             default:
                 EmptyView()
             }
