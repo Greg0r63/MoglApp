@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		7538E08D2C6111E500EB3162 /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E08C2C6111E500EB3162 /* CountryViewModel.swift */; };
 		7538E0942C611F7400EB3162 /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7538E0932C611F7400EB3162 /* LinearGradientView.swift */; };
+		7550F3A42C9790D500CDF56F /* ListeDesCapitalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7550F3A32C9790D500CDF56F /* ListeDesCapitalesView.swift */; };
 		75E0671D2C9476410038C66C /* GuessTheFlagIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0671C2C9476410038C66C /* GuessTheFlagIView.swift */; };
+		75E067462C9728AC0038C66C /* GuessTheCapitaIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E067452C9728AC0038C66C /* GuessTheCapitaIView.swift */; };
+		75E0674A2C9739C60038C66C /* ContinentSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E067492C9739C60038C66C /* ContinentSelectionView.swift */; };
 		75F244E72C660AEB00B4EBAE /* AnecdoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F244E62C660AEB00B4EBAE /* AnecdoteViewController.swift */; };
 		75F244E92C660B7D00B4EBAE /* FinishButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F244E82C660B7D00B4EBAE /* FinishButtonView.swift */; };
 		75F244EB2C660C0400B4EBAE /* AnecdoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F244EA2C660C0400B4EBAE /* AnecdoteView.swift */; };
@@ -71,7 +74,10 @@
 /* Begin PBXFileReference section */
 		7538E08C2C6111E500EB3162 /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
 		7538E0932C611F7400EB3162 /* LinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
+		7550F3A32C9790D500CDF56F /* ListeDesCapitalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeDesCapitalesView.swift; sourceTree = "<group>"; };
 		75E0671C2C9476410038C66C /* GuessTheFlagIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagIView.swift; sourceTree = "<group>"; };
+		75E067452C9728AC0038C66C /* GuessTheCapitaIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheCapitaIView.swift; sourceTree = "<group>"; };
+		75E067492C9739C60038C66C /* ContinentSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentSelectionView.swift; sourceTree = "<group>"; };
 		75F244E62C660AEB00B4EBAE /* AnecdoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnecdoteViewController.swift; sourceTree = "<group>"; };
 		75F244E82C660B7D00B4EBAE /* FinishButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishButtonView.swift; sourceTree = "<group>"; };
 		75F244EA2C660C0400B4EBAE /* AnecdoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnecdoteView.swift; sourceTree = "<group>"; };
@@ -146,11 +152,28 @@
 			children = (
 				7538E0932C611F7400EB3162 /* LinearGradientView.swift */,
 				75E0671C2C9476410038C66C /* GuessTheFlagIView.swift */,
+			);
+			path = GuessTheFlagView;
+			sourceTree = "<group>";
+		};
+		75E067472C9738620038C66C /* AnecdotesView */ = {
+			isa = PBXGroup;
+			children = (
 				75F244E62C660AEB00B4EBAE /* AnecdoteViewController.swift */,
 				75F244EA2C660C0400B4EBAE /* AnecdoteView.swift */,
 				75F244E82C660B7D00B4EBAE /* FinishButtonView.swift */,
 			);
-			path = GuessTheFlagView;
+			path = AnecdotesView;
+			sourceTree = "<group>";
+		};
+		75E067482C9738D40038C66C /* GuessTheCapitalView */ = {
+			isa = PBXGroup;
+			children = (
+				7550F3A32C9790D500CDF56F /* ListeDesCapitalesView.swift */,
+				75E067492C9739C60038C66C /* ContinentSelectionView.swift */,
+				75E067452C9728AC0038C66C /* GuessTheCapitaIView.swift */,
+			);
+			path = GuessTheCapitalView;
 			sourceTree = "<group>";
 		};
 		EAAF0DD82C5D22EC00302F03 /* SubViews */ = {
@@ -246,6 +269,8 @@
 				8E8572E52C63B50F00756AC9 /* NotesEtAvisViewController.swift */,
 				EAAF0DD82C5D22EC00302F03 /* SubViews */,
 				EA65D4B02C61751C00BA76C0 /* ModSelectionView.swift */,
+				75E067472C9738620038C66C /* AnecdotesView */,
+				75E067482C9738D40038C66C /* GuessTheCapitalView */,
 				7538E0902C611E7900EB3162 /* GuessTheFlagView */,
 				EAFDF7462C5BD56500D9782F /* ConfigurationView.swift */,
 				EAFDF7472C5BD56500D9782F /* RouletteView.swift */,
@@ -418,10 +443,12 @@
 				EAFF05F22C624F5E00C535D1 /* UIGradientColor.swift in Sources */,
 				EA95B2242C651F4E00A2DC77 /* RouletteViewController.swift in Sources */,
 				EAFDF7412C5BD46900D9782F /* AvisSuggestionItem.swift in Sources */,
+				7550F3A42C9790D500CDF56F /* ListeDesCapitalesView.swift in Sources */,
 				8E8572E82C63B50F00756AC9 /* NotesEtAvisViewController.swift in Sources */,
 				EAFDF73E2C5BD46900D9782F /* ActiviteItem.swift in Sources */,
 				EA3B8F812C63BF520026C012 /* RouletteViewModel.swift in Sources */,
 				EAFDF74A2C5BD56600D9782F /* HistoriqueView.swift in Sources */,
+				75E067462C9728AC0038C66C /* GuessTheCapitaIView.swift in Sources */,
 				75F244EB2C660C0400B4EBAE /* AnecdoteView.swift in Sources */,
 				EAFDF7502C5BD56600D9782F /* ListeView.swift in Sources */,
 				EAFDF7542C5BD60700D9782F /* HistoriqueViewModels.swift in Sources */,
@@ -436,6 +463,7 @@
 				75F244E72C660AEB00B4EBAE /* AnecdoteViewController.swift in Sources */,
 				8E8572E12C63834E00756AC9 /* ConfigurationViewModel.swift in Sources */,
 				8EACA4022C60F59200BA7E28 /* CustomColors.swift in Sources */,
+				75E0674A2C9739C60038C66C /* ContinentSelectionView.swift in Sources */,
 				7538E0942C611F7400EB3162 /* LinearGradientView.swift in Sources */,
 				EAFDF7402C5BD46900D9782F /* MorpionItem.swift in Sources */,
 				75E0671D2C9476410038C66C /* GuessTheFlagIView.swift in Sources */,

@@ -8,9 +8,6 @@
 import Foundation
 
 
-
-
-
 class CountryViewModel: ObservableObject {
     @Published var country: [Country] = []
     @Published var correctAnswer: Int = 0
@@ -18,17 +15,26 @@ class CountryViewModel: ObservableObject {
     @Published var answerChoosed: String = ""
     @Published var score = 0
     @Published var numberOfRounds = 0
-     @Published var showingFinalScore = false
-  //   // @Published var wrongAnswer = ""
-     //
+    @Published var showingFinalScore = false
+    @Published var wrongAnswer = ""
+    @Published var selectedContinent: String = "All"
+    
+    var continents: [String] = [
+        "All", "Africa", "Asia", "Europe", "North America", "South America", "Oceania"
+    ]
+    var drapeaux = ["🇪🇺","🇺🇳", "🇵🇸","🇫🇷"]
+    
     
     private let baseURL = "http://localhost:3000/country"
-    
-    
-    
-    
-    func fetchCountries() {
-        guard let url = URL(string: baseURL) else {
+
+    func fetchCountries(for continent: String = "All") {
+        var urlSelectedContinent = baseURL
+  
+        if  continent != "All" {
+            urlSelectedContinent = baseURL + "?continent=\(continent)"
+        }
+        
+        guard let url = URL(string: urlSelectedContinent) else {
             print("Invalid URL")
             return
         }
@@ -40,7 +46,7 @@ class CountryViewModel: ObservableObject {
                     DispatchQueue.main.async {
                         self.country = decodedCountries
                         self.country.shuffle()
-                        // self.correctAnswer = Int.random(in: 0...2)
+
                     }
                 } catch {
                     print("Error decoding data: \(error)")
