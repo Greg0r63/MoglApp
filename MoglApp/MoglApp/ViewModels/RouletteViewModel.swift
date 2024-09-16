@@ -46,7 +46,7 @@ class RouletteViewModel: ObservableObject {
      Fonction pour récupérer les data du tableau qui se trouve dans le fichier JSON`
      */
     func fetchCat() {
-        guard let url = URL(string: "http://localhost:3000/categorie") else {
+        guard let url = URL(string: "http://localhost:3000/categories") else {
             print("Invalid URL")
             return
         }
