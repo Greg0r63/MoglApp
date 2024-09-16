@@ -8,15 +8,34 @@
 import Foundation
 import SwiftUI
 
-class Categorie: Identifiable {
-    var id = UUID()
+class Categorie: Identifiable, Codable {
+    var id: String
     var nom: String
-    var couleur: Color
+    var color: String
     var proportion: Double
+    var couleur: Color {
+            switch color.lowercased() {
+            case "red":
+                return .moglRed
+            case "orange":
+                return .moglOrange
+            case "yellow":
+                return .moglYellow
+            case "green":
+                return .moglGreen
+            case "blue":
+                return .moglBlue
+            case "purple":
+                return .moglViolet
+            default:
+                return .black // Valeur par défaut si la couleur est inconnue
+            }
+        }
     
-    init(nom: String, couleur: Color, proportion: Double) {
+    init(id: String, nom: String, couleur: String, proportion: Double) {
+        self.id = id
         self.nom = nom
-        self.couleur = couleur
+        self.color = couleur
         self.proportion = proportion
     }
 }
