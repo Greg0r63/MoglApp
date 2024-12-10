@@ -15,7 +15,7 @@ class AnecdotesViewModel: ObservableObject {
     var cancellables = Set<AnyCancellable>()
     
     func fetchAnecdotes() {
-        guard let url = URL(string: "http://localhost:3000/anecdotes") else {
+        guard let url = URL(string: "http://10.80.55.116:3000/anecdotes") else {
             print("Invalid URL")
             return
         }

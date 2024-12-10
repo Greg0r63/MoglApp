@@ -7,8 +7,8 @@
 
 import Foundation
 
-
 class CountryViewModel: ObservableObject {
+
     @Published var country: [Country] = []
     @Published var correctAnswer: Int = 0
     @Published var showingScore: Bool = false
@@ -60,6 +60,7 @@ class CountryViewModel: ObservableObject {
         
     }
 
+    
       func flagChoosed(_ number: Int) {
           if number == correctAnswer {
               answerChoosed = "Bonne réponse 🥳"
@@ -101,10 +102,6 @@ class CountryViewModel: ObservableObject {
               print("stop")
           }
       }
-    
-    
-    // TEST EN SOLID
-    
 
 }
 

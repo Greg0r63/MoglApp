@@ -21,7 +21,7 @@ class EmojiViewModel: ObservableObject {
 
     
     func fetchEmojis() {
-        guard let url = URL(string: "http://localhost:3000/emojisJoueur") else {
+        guard let url = URL(string: "http://10.80.55.116:3000/emojisJoueur") else {
             print("Invalid URL")
             return
         }
